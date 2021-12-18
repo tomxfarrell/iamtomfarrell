@@ -11,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: composer install
       - run: composer require tightenco/jigsaw
-      - run: ./vendor/bin/jigsaw build dev
+      - run: ./vendor/bin/jigsaw build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
