@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ $page->language ?? 'en' }}">
     <head>
         <meta charset="utf-8">
@@ -9,7 +9,9 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="text-gray-900 font-sans antialiased">
+    <body class="">
+        @include('partials/header')
         @yield('body')
+        @include('partials/footer')
     </body>
 </html>
