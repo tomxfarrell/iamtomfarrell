@@ -2,8 +2,8 @@
 /* colors */
 h1 {
   margin: 0;
-  font-size: 30px;
-  color: #ccc;
+  font-size: 40px;
+  color: limegreen;
 }
 
 html, body {
@@ -12,8 +12,9 @@ html, body {
 
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
+  color: #fff;
   background-color: #000;
   overflow-x: hidden;
 }
