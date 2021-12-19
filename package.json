@@ -14,5 +14,8 @@
         "sass": "^1.45.0",
         "sass-loader": "^12.4.0",
         "tailwindcss": "^2.0.2"
+    },
+    "dependencies": {
+        "gsap": "^3.9.0"
     }
 }

@@ -1,0 +1,20 @@
+.panoramic-block {
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    min-width: 200vw;
+    height: auto;
+  }
+  &[data-direction=right] {
+    img {
+      left: -100%;
+    }
+  }
+  &[data-direction=left] {
+    img {
+      left: 0;
+    }
+  }
+  
+}

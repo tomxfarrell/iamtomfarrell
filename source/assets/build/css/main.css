@@ -2,8 +2,14 @@
 /* colors */
 h1 {
   margin: 0;
-  font-size: 40px;
-  color: hotpink;
+  font-size: 36px;
+  font-weight: 500;
+  color: #00D3FF;
+}
+
+header .logo-iatf {
+  width: 40px;
+  height: auto;
 }
 
 html, body {
@@ -24,8 +30,71 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  text-align: center;
+}
+.coming-soon .logo-iatf {
+  width: 80px;
+  height: auto;
+  margin-bottom: 2em;
 }
 .coming-soon .container {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: #112b31;
+  border: 2px solid #00D3FF;
+  padding: 2em;
+}
+.coming-soon #intro {
+  padding-left: 2px;
+}
+.coming-soon #intro p {
+  margin: 0;
+  text-align: right;
+}
+
+.page-header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-parallax {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parallax-content {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 120%;
+}
+
+.section {
+  background-color: #111111;
+}
+
+.section-mood-image {
+  margin-top: 80px;
+  height: 70vh;
+}
+
+.panoramic-block {
+  position: relative;
+  overflow: hidden;
+}
+.panoramic-block img {
+  width: 100%;
+  min-width: 200vw;
+  height: auto;
+}
+.panoramic-block[data-direction=right] img {
+  left: -100%;
+}
+.panoramic-block[data-direction=left] img {
+  left: 0;
 }
