@@ -1,0 +1,14 @@
+#portfolio {
+  background-color: $not-black;
+  h2 {
+    color: $white;
+  }
+  .row-portfolio {
+    img {
+      max-width: 100%;
+    }
+    .col-md-4 {
+      margin-bottom: 1em;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.with-line {
+  &:after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin-top: 5px;
+    background-color: $green;
+  }
+}
+
+.with-line-full {
+  &:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    display: block;
+    margin-top: 5px;
+    background-color: $green;
+  }
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 74px;
+  line-height: 88px;
+  font-weight: 300;
+  text-align: center;
+  color: $white;
+  strong {
+    font-size: 120px;
+    font-weight: 900;
+    display: block;
+  }
+}
+
+h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2, .like-h2 {
+  font-size: 52px;
+  font-weight: 300;
+}
+
+h3, .like-h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+ul {
+  line-height: 32px;
+}
+
+strong {
+  font-weight: 700;
+}

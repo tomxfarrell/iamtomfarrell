@@ -1,0 +1,83 @@
+#hero {
+  background-image: url(/assets/images/hero-bg-sky-light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .hgroup {
+    margin-top: 70px;
+  }
+  h1, h2 {
+    position: relative;
+    z-index: 20;
+  }
+
+  h2 {
+    color: $white;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .hero-trees,
+  .hero-mountains-foreground,
+  .hero-mountains-midground,
+  .hero-mountains-background,
+  .hero-mountains-background2,
+  .hero-night-mask,
+  .hero-stars  {
+    position: absolute;
+    left: 0;
+    width: 100vw;
+  }
+
+  .hero-trees {
+    z-index: 12;
+    bottom: -100px;
+    width: 102vw;
+  }
+  .hero-mountains-foreground {
+    z-index: 9;
+    bottom: 40px;
+  }
+
+  .hero-mountains-midground {
+    z-index: 8;
+    bottom: 180px;
+  }
+
+  .hero-mountains-background {
+    z-index: 7;
+    bottom: 220px;
+  }
+
+  .hero-mountains-background2 {
+    z-index: 6;
+    bottom: 200px;
+  }
+
+  // .hero-night-mask {
+  //   z-index: 18;
+  //   bottom: 0;
+
+  //   background-image: url(/assets/images/hero-night-mask.png);
+  //   background-blend-mode: hard-light;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   height: 100vh;
+  // }
+
+  .hero-night-mask {
+    z-index: 11;
+    bottom: 0;
+    mix-blend-mode: hard-light;
+  }
+
+  .hero-stars {
+    z-index: 12;
+    top: 0;
+  }
+}

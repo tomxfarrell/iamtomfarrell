@@ -1,0 +1,92 @@
+.accordion {
+  .accordion-item {
+    background: transparent;
+    border: 0;
+    margin-bottom: 2em;
+    // .accordion-header {
+    //   margin-bottom: 1em;
+    // }
+    .accordion-header, .accordion-button,
+    h3 {
+      font-size: 21px;
+      line-height: 28px;
+      font-weight: 700;
+      color: $white;
+    }
+    .job-title {
+      margin-bottom: 0;
+    }
+    .job-location {
+      font-weight: 300;
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .accordion-button {
+      color: $white;
+      background: transparent;
+      text-transform: uppercase;
+      padding: 0 0 12px 0;
+      border: 0;
+      border-radius: 0;
+      position: relative;
+      &:after {
+        background-image: url(/assets/images/plus.svg);
+        background-position: center center;
+        transform: none;
+      }
+      &:not(.collapsed):after {
+        background-image: url(/assets/images/minus.svg);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 3px;
+        display: block;
+        background-color: $green;
+        transition: width .33s ease;
+      }
+      &.collapsed {
+        &:before {
+          content: "";
+          width: 80px;
+        }
+      }
+
+      &:not(.collapsed) {
+        box-shadow: none;
+        &:before {
+          content: "";
+          width: 100%;
+        }
+      }
+      
+    }
+    
+  }
+  .accordion-body {
+    padding-left: 0;
+    .experience-box {
+      margin-bottom: 50px;
+    }
+    ul {
+      padding: 0 0 0 17px;
+      li {
+        &::marker {
+          color: $green;
+        }
+        &:not(:last-child) {
+          margin-bottom: 1em;
+        }
+      }
+    }
+
+    ul, p {
+      color: $white;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
+  
+}

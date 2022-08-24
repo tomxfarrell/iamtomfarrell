@@ -1,0 +1,25 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: $blue-gray;
+}
+
+main a {
+  color: $purple;
+  text-decoration: none;
+  transition: all .3s ease;
+  &:hover {
+    color: $blue-gray;
+  }
+}
+
+section:not(.hero) {
+  padding: 145px 0;
+}
+
+.dl-inline {
+  display: inline-flex;
+}
+

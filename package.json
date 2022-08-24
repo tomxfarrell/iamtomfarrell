@@ -7,15 +7,18 @@
         "prod": "mix --production"
     },
     "devDependencies": {
-        "laravel-mix": "^6.0.10",
+        "laravel-mix": "^6.0.39",
         "laravel-mix-jigsaw": "^1.5.0",
         "postcss": "^8.2.4",
         "postcss-import": "^14.0.0",
-        "sass": "^1.45.0",
-        "sass-loader": "^12.4.0",
+        "prettier": "2.7.1",
+        "sass": "^1.54.3",
+        "sass-loader": "^12.6.0",
         "tailwindcss": "^2.0.2"
     },
     "dependencies": {
-        "gsap": "^3.9.0"
+        "@popperjs/core": "^2.11.5",
+        "bootstrap": "^5.2.0",
+        "firebase": "^9.9.2"
     }
 }

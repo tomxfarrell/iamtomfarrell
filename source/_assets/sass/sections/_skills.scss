@@ -1,0 +1,19 @@
+#skills-and-experience {
+  .row-skills {
+    img {
+      height: 48px;
+      margin-bottom: .5em;
+    }
+    h3 {
+      margin-bottom: .85em;
+      color: $not-black;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      li:not(:last-child) {
+        margin-bottom: .45em;
+      }
+    }
+  }
+}
