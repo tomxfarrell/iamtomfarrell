@@ -7,4 +7,33 @@ footer {
       margin-bottom: 0;
     }
   }
+  a:focus-visible {
+    box-shadow: none;
+    border: 0;
+    color: $green;
+    outline: none;
+  }
+
+  #btn-top {
+    border: 0;
+    background: transparent;
+    #chevron-up {
+      width: 25px;
+      height: 25px;
+      fill: $green;
+    }
+  }
+
+
+  .footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .copy-col {
+      margin-left: auto;
+    }
+    .top-col {
+      margin-left: auto;
+    }
+  }
 }

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1439.99 401.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <polygon class="cls-1" points="1351.82 1.81 1261.83 29.75 1184.06 0 1005.86 90.79 905.25 53.1 838.09 77.8 762.54 41.97 654.57 99.66 504.69 51.05 374.9 .94 269.64 52.22 178.05 18.96 80.08 53.26 0 14.22 0 81.31 0 401.07 1439.99 401.07 1439.99 97.89 1439.99 46.43 1351.82 1.81"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="720" y1="-221.35" x2="720" y2="767.08" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5b4e9b"/>
+      <stop offset="1" stop-color="#07061f"/>
+    </linearGradient>
+  </defs>
+  <g id="_ò__1" data-name="ò‡_1">
+    <g class="cls-3">
+      <rect class="cls-2" x="0" y="-191.74" width="1439.99" height="948.79"/>
+    </g>
+  </g>
+</svg>

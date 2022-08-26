@@ -5,6 +5,7 @@
 /.idea/
 /.vscode/
 npm-debug.log
+gsap-bonus.tgz
 
 # Optional ignores
 # /build_staging/

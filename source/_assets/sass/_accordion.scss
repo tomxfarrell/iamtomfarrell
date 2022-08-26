@@ -6,6 +6,13 @@
     // .accordion-header {
     //   margin-bottom: 1em;
     // }
+
+    .accordion-button {
+      &:focus {
+        box-shadow: none;
+        color: $green;
+      }
+    }
     .accordion-header, .accordion-button,
     h3 {
       font-size: 21px;

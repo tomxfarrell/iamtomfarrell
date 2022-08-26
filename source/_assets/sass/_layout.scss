@@ -6,7 +6,7 @@ body {
   color: $blue-gray;
 }
 
-main a {
+main a, footer a {
   color: $purple;
   text-decoration: none;
   transition: all .3s ease;

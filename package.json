@@ -19,6 +19,7 @@
     "dependencies": {
         "@popperjs/core": "^2.11.5",
         "bootstrap": "^5.2.0",
-        "firebase": "^9.9.2"
+        "firebase": "^9.9.2",
+        "gsap": "file:gsap-bonus.tgz"
     }
 }

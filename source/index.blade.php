@@ -2,32 +2,35 @@
 
 @section('body')
 
+
 <header>
   <div class="container">
   
       <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="/"><img src="assets/images/logo-tf.svg" alt="TF logo"></a>
+            <a class="navbar-brand" href="/">
+              @include('svgs.logo-tf')
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">About</a>
+                  <a class="nav-link" aria-current="page" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Experience</a>
+                  <a class="nav-link" href="#skills-and-experience">Experience</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Work</a>
+                  <a class="nav-link" href="#portfolio">Work</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Resume</a>
+                  <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
+                  <a class="nav-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -37,8 +40,9 @@
   </div>
 </header>
 
-<main>
-  <section id="hero">
+<main id="top">
+  <div id="smooth-content">
+    <section id="hero">
       <div class="container">
         <div class="hgroup">
           <h1>
@@ -60,24 +64,36 @@
           </div>
         </div> -->
       </div>
-      <!-- <img src="assets/images/hero-sun.png" alt="Sun" class="hero-sun"> -->
-      <img src="assets/images/hero-mountains-background2.png" alt="Mountains" class="hero-mountains-background2">
-      <img src="assets/images/hero-mountains-background.png" alt="Mountains" class="hero-mountains-background">
-      <img src="assets/images/hero-mountains-midground.png" alt="Mountains" class="hero-mountains-midground">
-      <img src="assets/images/hero-mountains-foreground.png" alt="Mountains" class="hero-mountains-foreground">
-      <img src="assets/images/hero-trees.png" alt="Trees" class="hero-trees">
+      <img src="assets/images/hero-sun.png" alt="Sun" class="hero-sun">
+      
+
+        <img src="assets/images/hero-day-mountains-background.svg" alt="Mountains BG" class="hero-day-mountains-background">
+        <img src="assets/images/hero-night-mountains-background.svg" alt="Mountains BG" class="hero-night-mountains-background">
+        
+        <img src="assets/images/hero-day-mountains-midground.svg" alt="Mountains" class="hero-day-mountains-midground">
+        <img src="assets/images/hero-night-mountains-midground.svg" alt="Mountains" class="hero-night-mountains-midground">
+
+        <img src="assets/images/hero-day-mountains-foreground.svg" alt="Mountains" class="hero-day-mountains-foreground">
+        <img src="assets/images/hero-night-mountains-foreground.svg" alt="Mountains" class="hero-night-mountains-foreground">
+
+        <img src="assets/images/hero-day-trees.svg" alt="Trees" class="hero-day-trees">
+        <img src="assets/images/hero-night-trees.svg" alt="Trees" class="hero-night-trees">
+        
+      <img src="assets/images/hero-moon.png" alt="Moon" class="hero-moon">
+      <img src="assets/images/hero-hiker.svg" alt="Hiker" class="hero-hiker">
       <img src="assets/images/hero-night-mask.png" alt="Night sky" class="hero-night-mask">
-      <img src="assets/images/hero-stars.svg" alt="Stars" class="hero-stars">
-  </section>
+      
+      <!-- <img src="assets/images/hero-stars.svg" alt="Stars" class="hero-stars"> -->
+    </section>
 
 
   <section id="skills-and-experience">
     <div class="container">
       <div class="row mb-5">
-        <div class="col-md-4">
+        <div class="col-md-6 col-lg-4">
           <h2 class="with-line">Skills &<br> Experience</h2>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-6 col-lg-8">
           <p>Front-end developer with over 2 decades of experience developing custom websites and interactive animations. Analytical and detail-oriented with a creative eye and ability to build websites from concept to completion. Experience collaborating with cross functional teams and utilizing agile methodologies.</p>
         </div>
       </div>
@@ -121,23 +137,35 @@
     <div class="container">
       <h2 class="with-line mb-5">Portfolio</h2>
       <div class="row row-portfolio">
-        <div class="col-md-4">
-          <img src="assets/images/site-graphitebio-2x.jpg" alt="Graphite Bio website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="">
+            <img src="assets/images/site-graphitebio-2x.jpg" alt="Graphite Bio website">
+          </a>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="">
+            <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+          </a>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="#">
+            <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+          </a>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="#">
+            <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+          </a>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="#">
+            <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+          </a>
         </div>
-        <div class="col-md-4">
-          <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+        <div class="col-site col-md-6 col-lg-4">
+          <a href="#">
+            <img src="assets/images/site-itsjustlunch-2x.jpg" alt="It's Just Lunch website">
+          </a>
         </div>
       </div>
     </div>
@@ -147,10 +175,10 @@
   <section id="resume">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-5 col-lg-3">
           <h2 class="with-line">Resume</h2>
         </div>
-        <div class="col-md-9">
+        <div class="col-md-7 col-lg-9">
           
           <div class="accordion" id="accordionResume">
             <div class="accordion-item">
@@ -211,7 +239,13 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionResume">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <ul>
+                    <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for <strong>top pharmaceutical and Fortune 500 companies</strong></li>
+                    <li>Developed and standardized email templates for company-wide usage</li>
+                    <li>Increased online store sales and web traffic for various companies with Search Engine Optimization</li>
+                    <li>Helped develop internal company tools to increase productivity and efficiency</li>
+                    <li>Mentored junior developers, producers and account executives on agency processes and procedures</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -284,7 +318,7 @@
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-5 col-lg-4">
           <h2 class="with-line mb-5">Lets Chat</h2>
           <dl class="mb-5">
             <dt>Thomas Farrell</dt>
@@ -312,7 +346,7 @@
             </a>
           </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-7 col-lg-8">
           <form id="contactForm">
           
               <div class="row mb-4">
@@ -374,8 +408,19 @@
 
 <footer>
   <div class="container">
-    <p class="copy">&copy; 2022 iamtomfarrell.com</p>
-    <p>Designed by my pal <a href="http://www.jbellinger.com/" target="_blank">JB</a>, developed by me, of course.</p>
+    <div class="footer-row">
+      <div class="copy-col">
+        <p class="copy">&copy; 2022 iamtomfarrell.com</p>
+        <p>Designed by my pal <a href="http://www.jbellinger.com/" target="_blank">JB</a> &amp; developed by me, of course.</p>
+      </div>
+      <div class="top-col">
+        <button id="btn-top">
+          @include('svgs.chevron-up')
+        </button>
+      </div>
+    </div>
+    
+
   </div>
 </footer>
 

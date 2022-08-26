@@ -10970,12 +10970,12 @@ body {
   color: #5D6A77;
 }
 
-main a {
+main a, footer a {
   color: #6f42c1;
   text-decoration: none;
   transition: all 0.3s ease;
 }
-main a:hover {
+main a:hover, footer a:hover {
   color: #5D6A77;
 }
 
@@ -10991,6 +10991,10 @@ section:not(.hero) {
   border-radius: 0;
   border-color: #5D6A77;
   padding: 0.7rem 0.75rem;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(88, 226, 139, 0.25);
+  border-color: #56E28B;
 }
 
 .form-text {
@@ -11014,8 +11018,12 @@ section:not(.hero) {
 
 header {
   position: absolute;
-  z-index: 11;
+  z-index: 13; /* higher than night mask */
   width: 100%;
+}
+header #logo-tf-svg {
+  width: 80px;
+  height: 89px;
 }
 header .container-fluid, header .container-sm, header .container-md, header .container-lg, header .container-xl, header .container-xxl {
   justify-content: space-between;
@@ -11064,11 +11072,41 @@ footer p {
 footer p.copy {
   margin-bottom: 0;
 }
+footer a:focus-visible {
+  box-shadow: none;
+  border: 0;
+  color: #56E28B;
+  outline: none;
+}
+footer #btn-top {
+  border: 0;
+  background: transparent;
+}
+footer #btn-top #chevron-up {
+  width: 25px;
+  height: 25px;
+  fill: #56E28B;
+}
+footer .footer-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-row .copy-col {
+  margin-left: auto;
+}
+footer .footer-row .top-col {
+  margin-left: auto;
+}
 
 .accordion .accordion-item {
   background: transparent;
   border: 0;
   margin-bottom: 2em;
+}
+.accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
+  color: #56E28B;
 }
 .accordion .accordion-item .accordion-header, .accordion .accordion-item .accordion-button,
 .accordion .accordion-item h3,
@@ -11146,7 +11184,7 @@ footer p.copy {
 }
 
 #hero {
-  background-image: url(/assets/images/hero-bg-sky-light.png);
+  background-image: url(/assets/images/hero-day-sky.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -11155,10 +11193,8 @@ footer p.copy {
 }
 #hero .hgroup {
   margin-top: 70px;
-}
-#hero h1, #hero .h1, #hero h2, #hero .h2 {
-  position: relative;
   z-index: 20;
+  position: relative;
 }
 #hero h2, #hero .h2 {
   color: #fff;
@@ -11167,42 +11203,85 @@ footer p.copy {
   font-weight: 700;
   text-align: center;
 }
-#hero .hero-trees,
-#hero .hero-mountains-foreground,
-#hero .hero-mountains-midground,
-#hero .hero-mountains-background,
-#hero .hero-mountains-background2,
+#hero .hero-day-trees,
+#hero .hero-night-trees,
+#hero .hero-day-mountains-foreground,
+#hero .hero-night-mountains-foreground,
+#hero .hero-day-mountains-midground,
+#hero .hero-night-mountains-midground,
+#hero .hero-day-mountains-background,
+#hero .hero-night-mountains-background,
 #hero .hero-night-mask,
 #hero .hero-stars {
   position: absolute;
   left: 0;
   width: 100vw;
 }
-#hero .hero-trees {
+#hero .hero-sun {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 258px;
+  top: 13%;
+}
+#hero .hero-hiker {
+  position: absolute;
+  z-index: 13;
+  bottom: 4vw; /* change this with media query */
+  right: 26%;
+  width: 51px;
+  height: 80px;
+}
+#hero .hero-day-trees,
+#hero .hero-night-trees {
   z-index: 12;
-  bottom: -100px;
+  bottom: -80px;
   width: 102vw;
 }
-#hero .hero-mountains-foreground {
+#hero .hero-night-trees {
+  opacity: 0;
+}
+#hero .hero-day-mountains-foreground,
+#hero .hero-night-mountains-foreground {
   z-index: 9;
   bottom: 40px;
 }
-#hero .hero-mountains-midground {
-  z-index: 8;
-  bottom: 180px;
+#hero .hero-night-mountains-foreground {
+  opacity: 0;
 }
-#hero .hero-mountains-background {
+#hero .hero-day-mountains-midground,
+#hero .hero-night-mountains-midground {
+  z-index: 8;
+  bottom: 160px;
+}
+#hero .hero-night-mountains-midground {
+  opacity: 0;
+}
+#hero .hero-day-mountains-background,
+#hero .hero-night-mountains-background {
   z-index: 7;
   bottom: 220px;
 }
-#hero .hero-mountains-background2 {
-  z-index: 6;
-  bottom: 200px;
+#hero .hero-night-mountains-background {
+  opacity: 0;
+}
+#hero .hero-moon {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 258px;
+  top: -13%;
 }
 #hero .hero-night-mask {
-  z-index: 11;
+  z-index: 1;
   bottom: 0;
   mix-blend-mode: hard-light;
+  opacity: 0;
 }
 #hero .hero-stars {
   z-index: 12;
@@ -11219,14 +11298,19 @@ footer p.copy {
 #portfolio {
   background-color: #19183A;
 }
+#portfolio a:focus-visible {
+  box-shadow: none;
+  border: 0;
+  outline-color: #56E28B;
+}
 #portfolio h2, #portfolio .h2 {
   color: #fff;
 }
 #portfolio .row-portfolio img {
   max-width: 100%;
 }
-#portfolio .row-portfolio .col-md-4 {
-  margin-bottom: 1em;
+#portfolio .row-portfolio .col-site {
+  margin-bottom: 1.5em;
 }
 
 #skills-and-experience .row-skills img {
@@ -11243,4 +11327,21 @@ footer p.copy {
 }
 #skills-and-experience .row-skills ul li:not(:last-child) {
   margin-bottom: 0.45em;
+}
+
+#contact dl a:focus-visible {
+  box-shadow: none;
+  color: #56E28B;
+  border: 0;
+  outline: none;
+}
+#contact .social a:focus-visible {
+  box-shadow: none;
+  border: 0;
+  outline-color: #56E28B;
+}
+#contact .btn-submit:focus-visible {
+  box-shadow: none;
+  border: 0;
+  outline-color: #19183A;
 }

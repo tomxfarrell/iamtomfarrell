@@ -1,3 +1,28 @@
 #contact {
-  
+  dl {
+    a:focus-visible {
+      box-shadow: none;
+      color: $green;
+      border: 0;
+      outline: none;
+    }
+  }
+
+  .social {
+    a:focus-visible {
+      box-shadow: none;
+      border: 0;
+      outline-color: $green;
+    }
+  }
+
+  .btn-submit {
+    &:focus-visible {
+      box-shadow: none;
+      border: 0;
+      outline-color: $not-black;
+      // background-color: $not-black;
+      // color: $green;
+    }
+  }
 }

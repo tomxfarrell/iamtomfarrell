@@ -1,5 +1,5 @@
 #hero {
-  background-image: url(/assets/images/hero-bg-sky-light.png);
+  background-image: url(/assets/images/hero-day-sky.svg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -8,10 +8,8 @@
 
   .hgroup {
     margin-top: 70px;
-  }
-  h1, h2 {
-    position: relative;
     z-index: 20;
+    position: relative;
   }
 
   h2 {
@@ -22,11 +20,14 @@
     text-align: center;
   }
 
-  .hero-trees,
-  .hero-mountains-foreground,
-  .hero-mountains-midground,
-  .hero-mountains-background,
-  .hero-mountains-background2,
+  .hero-day-trees,
+  .hero-night-trees,
+  .hero-day-mountains-foreground,
+  .hero-night-mountains-foreground,
+  .hero-day-mountains-midground,
+  .hero-night-mountains-midground,
+  .hero-day-mountains-background,
+  .hero-night-mountains-background,
   .hero-night-mask,
   .hero-stars  {
     position: absolute;
@@ -34,46 +35,82 @@
     width: 100vw;
   }
 
-  .hero-trees {
+  .hero-sun {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 258px;
+    top: 13%;
+  }
+
+  .hero-hiker {
+    position: absolute;
+    z-index: 13;
+    bottom: 4vw; /* change this with media query */ 
+    right: 26%;
+    width: 51px;
+    height: 80px;
+  }
+
+  .hero-day-trees,
+  .hero-night-trees {
     z-index: 12;
-    bottom: -100px;
+    bottom: -80px;
     width: 102vw;
   }
-  .hero-mountains-foreground {
+
+  .hero-night-trees {
+    opacity: 0;
+  }
+
+  .hero-day-mountains-foreground,
+  .hero-night-mountains-foreground {
     z-index: 9;
     bottom: 40px;
   }
 
-  .hero-mountains-midground {
-    z-index: 8;
-    bottom: 180px;
+  .hero-night-mountains-foreground {
+    opacity: 0;
   }
 
-  .hero-mountains-background {
+  .hero-day-mountains-midground,
+  .hero-night-mountains-midground {
+    z-index: 8;
+    bottom: 160px;
+  }
+
+  .hero-night-mountains-midground {
+    opacity: 0;
+  }
+
+  .hero-day-mountains-background,
+  .hero-night-mountains-background {
     z-index: 7;
     bottom: 220px;
   }
 
-  .hero-mountains-background2 {
-    z-index: 6;
-    bottom: 200px;
+  .hero-night-mountains-background {
+    opacity: 0;
   }
 
-  // .hero-night-mask {
-  //   z-index: 18;
-  //   bottom: 0;
-
-  //   background-image: url(/assets/images/hero-night-mask.png);
-  //   background-blend-mode: hard-light;
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   height: 100vh;
-  // }
+  .hero-moon {
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 258px;
+    top: -13%;
+  }
 
   .hero-night-mask {
-    z-index: 11;
+    z-index: 1;
     bottom: 0;
     mix-blend-mode: hard-light;
+    opacity: 0;
   }
 
   .hero-stars {
