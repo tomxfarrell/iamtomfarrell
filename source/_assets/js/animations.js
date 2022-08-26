@@ -147,7 +147,7 @@ const animations = (function () {
       )
 
       .to(moon, {
-        yPercent: 70,
+        yPercent: 73,
         opacity: 1,
         duration: 0.3,
       });
