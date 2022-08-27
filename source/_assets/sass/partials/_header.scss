@@ -3,6 +3,9 @@ header {
   z-index: 13; /* higher than night mask */
   width: 100%;
 
+  .navbar-nav {
+    opacity: 0; /* fade in on load */
+  }
   #logo-tf-svg {
     width: 80px;
     height: 89px;
@@ -35,11 +38,11 @@ header {
       margin-top: 5px;
       transform: scaleX(0);
       transform-origin: 50% 50%;
-      background-color: $purple;
+      background-color: $white;
       transition: all .2s ease;
     }
     &:hover {
-      color: $purple;
+      color: $white;
       
       &:after {
         content: "";
@@ -49,5 +52,10 @@ header {
   }
 
 
+  @media (max-width: 992px) {
+    .container {
+      max-width: 100%;
+    }
+  }
 
 }

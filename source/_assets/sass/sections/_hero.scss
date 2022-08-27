@@ -5,19 +5,24 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  opacity: 0; /* loads to 1 */
 
   .hgroup {
-    margin-top: 70px;
-    z-index: 20;
+    // margin-top: 70px;
+    margin-top: 4vh;
+    z-index: 9;
     position: relative;
   }
 
   h2 {
     color: $white;
-    font-size: 22px;
-    line-height: 26px;
+    // font-size: 22px;
+    // line-height: 26px;
+    font-size: 2.1vw;
+    line-height: 2.6vw;
     font-weight: 700;
     text-align: center;
+    text-transform: none;
   }
 
   .hero-day-trees,
@@ -42,33 +47,29 @@
     right: 0;
     margin: 0 auto;
     width: 258px;
-    top: 13%;
-  }
-
-  .hero-hiker {
-    position: absolute;
-    z-index: 13;
-    bottom: 4vw; /* change this with media query */ 
-    right: 26%;
-    width: 51px;
-    height: 80px;
+    // top: 13%;
+    top: 13vh;
   }
 
   .hero-day-trees,
   .hero-night-trees {
     z-index: 12;
-    bottom: -80px;
+    // bottom: -90px;
+    bottom: -13vh;
     width: 102vw;
   }
 
   .hero-night-trees {
     opacity: 0;
+    // bottom: -260px;
+    bottom: -36.7vh;
   }
 
   .hero-day-mountains-foreground,
   .hero-night-mountains-foreground {
     z-index: 9;
-    bottom: 40px;
+    // bottom: 40px;
+    bottom: 7.2vh;
   }
 
   .hero-night-mountains-foreground {
@@ -78,7 +79,8 @@
   .hero-day-mountains-midground,
   .hero-night-mountains-midground {
     z-index: 8;
-    bottom: 160px;
+    // bottom: 160px;
+    bottom: 22vh;
   }
 
   .hero-night-mountains-midground {
@@ -88,7 +90,8 @@
   .hero-day-mountains-background,
   .hero-night-mountains-background {
     z-index: 7;
-    bottom: 220px;
+    // bottom: 220px;
+    bottom: 30vh;
   }
 
   .hero-night-mountains-background {
@@ -103,18 +106,22 @@
     margin-left: auto;
     margin-right: auto;
     width: 258px;
-    top: -13%;
+    // top: -13%;
+    top: -13vh;
   }
 
   .hero-night-mask {
     z-index: 1;
+    top: 0;
     bottom: 0;
     mix-blend-mode: hard-light;
     opacity: 0;
   }
 
   .hero-stars {
-    z-index: 12;
-    top: 0;
+    z-index: 2;
+    // top: -70px;
+    top: -20vh;
+    opacity: 0;
   }
 }

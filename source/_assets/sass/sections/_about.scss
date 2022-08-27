@@ -1,0 +1,22 @@
+#about {
+  position: relative;
+  z-index: 11;
+  background-image:url(/assets/images/bg-about.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  margin-top: -250px;
+
+  .container {
+    opacity: 0;
+  }
+  p, h2 {
+    color: $white;
+  }
+
+  .row-about {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+}

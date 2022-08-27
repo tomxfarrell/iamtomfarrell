@@ -19359,9 +19359,19 @@ var animations = function () {
   //     smooth: 1,
   //   });
   // }
+  function heroLoad() {
+    var heroSection = document.querySelector("#hero");
+    var herosectiontl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
+    herosectiontl.to(heroSection, {
+      duration: 1,
+      opacity: 1
+    });
+  }
+
   function logo() {
     var logotl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
     logotl.from("#logo-t", {
+      delay: 1,
       duration: 1,
       opacity: 0
     });
@@ -19373,6 +19383,9 @@ var animations = function () {
       duration: 3,
       drawSVG: "0%"
     });
+    logotl.to(".navbar-nav", {
+      opacity: 1
+    }, "<");
   }
 
   function hero() {
@@ -19380,6 +19393,8 @@ var animations = function () {
         sun = document.querySelector(".hero-sun"),
         nightSky = document.querySelector(".hero-night-mask"),
         moon = document.querySelector(".hero-moon"),
+        stars = document.querySelector(".hero-stars"),
+        hiker = document.querySelector(".hero-hiker"),
         heroDayMountainsBackground = document.querySelector(".hero-day-mountains-background"),
         heroNightMountainsBackground = document.querySelector(".hero-night-mountains-background"),
         heroDayTrees = document.querySelector(".hero-day-trees"),
@@ -19387,7 +19402,9 @@ var animations = function () {
         heroDayMountainsMidground = document.querySelector(".hero-day-mountains-midground"),
         heroNightMountainsMidground = document.querySelector(".hero-night-mountains-midground"),
         heroDayMountainsForeground = document.querySelector(".hero-day-mountains-foreground"),
-        heroNightMountainsForeground = document.querySelector(".hero-night-mountains-foreground");
+        heroNightMountainsForeground = document.querySelector(".hero-night-mountains-foreground"),
+        hgroup = document.querySelector(".hgroup"),
+        aboutSection = document.querySelector(".about-container");
     gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
       opacity: 0
     });
@@ -19395,24 +19412,26 @@ var animations = function () {
       scrollTrigger: {
         trigger: hero,
         start: "top top",
-        end: "+=90%",
+        end: "+=100%",
         pin: true,
-        scrub: true,
+        scrub: 3,
         markers: false,
         id: "hero",
         toggleActions: "play none reverse none"
       }
     }).to(sun, {
-      yPercent: 30,
-      opacity: 0,
-      duration: 0.3
-    }, "<").to(nightSky, {
+      yPercent: 55,
+      duration: 1
+    }, "<").set(sun, {
+      opacity: 0
+    }).to(nightSky, {
+      yPercent: 0,
       opacity: 1,
-      duration: 0.3
+      duration: 1
     }, "<").to(heroNightMountainsBackground, {
       opacity: 1,
       duration: 0.3
-    }).to(heroDayMountainsBackground, {
+    }, "<").to(heroDayMountainsBackground, {
       opacity: 0,
       duration: 0.3
     }, "<").to(heroDayMountainsMidground, {
@@ -19427,11 +19446,29 @@ var animations = function () {
     }, "<").to(heroDayMountainsForeground, {
       opacity: 0,
       duration: 0.3
-    }, "<").to(heroNightTrees, {
+    }).to(heroNightTrees, {
       opacity: 1,
       duration: 0.3
-    }, "<").to(moon, {
+    }, "<").set(heroDayTrees, {
+      opacity: 0
+    }).to(stars, {
+      opacity: 1,
+      duration: 1
+    }).to(moon, {
       yPercent: 73,
+      opacity: 1,
+      duration: 2
+    }).to(hgroup, {
+      yPercent: 30,
+      opacity: 0,
+      duration: 4
+    }, "<").to(heroNightMountainsForeground, {
+      yPercent: -30,
+      duration: 4
+    }, "<").to(heroNightTrees, {
+      yPercent: -40,
+      duration: 4
+    }, "<").to(aboutSection, {
       opacity: 1,
       duration: 0.3
     });
@@ -19439,11 +19476,13 @@ var animations = function () {
 
   return {
     // scrollSmoother: scrollSmoother,
+    heroLoad: heroLoad,
     logo: logo,
     hero: hero
   };
 }();
 
+animations.heroLoad();
 animations.logo();
 animations.hero();
 

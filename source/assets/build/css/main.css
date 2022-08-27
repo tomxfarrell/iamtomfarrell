@@ -10928,16 +10928,25 @@ h1, .h1, h2, .h2 {
 
 h1, .h1 {
   font-family: "Raleway", sans-serif;
-  font-size: 74px;
-  line-height: 88px;
+  font-size: 6vw;
+  line-height: 6.5vw;
   font-weight: 300;
   text-align: center;
   color: #fff;
 }
 h1 strong, .h1 strong {
-  font-size: 120px;
+  font-size: 8vw;
   font-weight: 900;
   display: block;
+}
+@media (min-width: 1290px) {
+  h1, .h1 {
+    font-size: 5vw;
+    line-height: 5.5vw;
+  }
+  h1 strong, .h1 strong {
+    font-size: 7vw;
+  }
 }
 
 h2, .h2, h3, .h3 {
@@ -11021,6 +11030,9 @@ header {
   z-index: 13; /* higher than night mask */
   width: 100%;
 }
+header .navbar-nav {
+  opacity: 0; /* fade in on load */
+}
 header #logo-tf-svg {
   width: 80px;
   height: 89px;
@@ -11051,15 +11063,20 @@ header .nav-link:after {
   margin-top: 5px;
   transform: scaleX(0);
   transform-origin: 50% 50%;
-  background-color: #6f42c1;
+  background-color: #fff;
   transition: all 0.2s ease;
 }
 header .nav-link:hover {
-  color: #6f42c1;
+  color: #fff;
 }
 header .nav-link:hover:after {
   content: "";
   transform: scaleX(1);
+}
+@media (max-width: 992px) {
+  header .container {
+    max-width: 100%;
+  }
 }
 
 footer {
@@ -11190,18 +11207,20 @@ footer .footer-row .top-col {
   height: 100vh;
   position: relative;
   overflow: hidden;
+  opacity: 0; /* loads to 1 */
 }
 #hero .hgroup {
-  margin-top: 70px;
-  z-index: 20;
+  margin-top: 4vh;
+  z-index: 9;
   position: relative;
 }
 #hero h2, #hero .h2 {
   color: #fff;
-  font-size: 22px;
-  line-height: 26px;
+  font-size: 2.1vw;
+  line-height: 2.6vw;
   font-weight: 700;
   text-align: center;
+  text-transform: none;
 }
 #hero .hero-day-trees,
 #hero .hero-night-trees,
@@ -11224,29 +11243,22 @@ footer .footer-row .top-col {
   right: 0;
   margin: 0 auto;
   width: 258px;
-  top: 13%;
-}
-#hero .hero-hiker {
-  position: absolute;
-  z-index: 13;
-  bottom: 4vw; /* change this with media query */
-  right: 26%;
-  width: 51px;
-  height: 80px;
+  top: 13vh;
 }
 #hero .hero-day-trees,
 #hero .hero-night-trees {
   z-index: 12;
-  bottom: -80px;
+  bottom: -13vh;
   width: 102vw;
 }
 #hero .hero-night-trees {
   opacity: 0;
+  bottom: -36.7vh;
 }
 #hero .hero-day-mountains-foreground,
 #hero .hero-night-mountains-foreground {
   z-index: 9;
-  bottom: 40px;
+  bottom: 7.2vh;
 }
 #hero .hero-night-mountains-foreground {
   opacity: 0;
@@ -11254,7 +11266,7 @@ footer .footer-row .top-col {
 #hero .hero-day-mountains-midground,
 #hero .hero-night-mountains-midground {
   z-index: 8;
-  bottom: 160px;
+  bottom: 22vh;
 }
 #hero .hero-night-mountains-midground {
   opacity: 0;
@@ -11262,7 +11274,7 @@ footer .footer-row .top-col {
 #hero .hero-day-mountains-background,
 #hero .hero-night-mountains-background {
   z-index: 7;
-  bottom: 220px;
+  bottom: 30vh;
 }
 #hero .hero-night-mountains-background {
   opacity: 0;
@@ -11275,17 +11287,38 @@ footer .footer-row .top-col {
   margin-left: auto;
   margin-right: auto;
   width: 258px;
-  top: -13%;
+  top: -13vh;
 }
 #hero .hero-night-mask {
   z-index: 1;
+  top: 0;
   bottom: 0;
   mix-blend-mode: hard-light;
   opacity: 0;
 }
 #hero .hero-stars {
-  z-index: 12;
-  top: 0;
+  z-index: 2;
+  top: -20vh;
+  opacity: 0;
+}
+
+#about {
+  position: relative;
+  z-index: 11;
+  background-image: url(/assets/images/bg-about.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -250px;
+}
+#about .container {
+  opacity: 0;
+}
+#about p, #about h2, #about .h2 {
+  color: #fff;
+}
+#about .row-about {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 #resume {
@@ -11293,6 +11326,12 @@ footer .footer-row .top-col {
 }
 #resume h2, #resume .h2 {
   color: #fff;
+}
+#resume .accordion-button {
+  transition: all 0.3s ease;
+}
+#resume .accordion-button:hover {
+  color: #56E28B;
 }
 
 #portfolio {
