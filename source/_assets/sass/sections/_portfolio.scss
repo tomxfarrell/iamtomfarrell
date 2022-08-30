@@ -9,11 +9,18 @@
     color: $white;
   }
   .row-portfolio {
+    margin-bottom: 2em;
     img {
       max-width: 100%;
     }
     .col-site {
       margin-bottom: 1.5em;
+    }
+  }
+
+  .row-concepts {
+    .col-concept {
+      margin-bottom: 2em;
     }
   }
 }

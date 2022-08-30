@@ -52,7 +52,7 @@
         height: 3px;
         display: block;
         background-color: $green;
-        transition: width .33s ease;
+        transition: width 0.5s ease;
       }
       &.collapsed {
         &:before {

@@ -19,6 +19,7 @@
 </head>
 <body>
     @yield('body')
+    @include('_layouts._partials.modals')
     <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
 </body>
 </html>

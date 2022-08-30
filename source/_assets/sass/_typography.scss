@@ -51,7 +51,7 @@ h1 {
   
 }
 
-h2, h3 {
+h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -63,6 +63,11 @@ h2, .like-h2 {
 h3, .like-h3 {
   font-size: 24px;
   font-weight: 700;
+}
+
+h4, .like-h4 {
+  font-size: 18px;
+  line-height: 22px;
 }
 
 ul {

@@ -4,6 +4,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   color: $blue-gray;
+  opacity: 0;
 }
 
 main a, footer a {
@@ -15,8 +16,37 @@ main a, footer a {
   }
 }
 
+.btn-main {
+  background-color: $green;
+  color: $not-black;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 150px;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: $not-black;
+    color: $green;
+  }
+}
+
+
+::-moz-selection { 
+  background: $green;
+}
+
+::selection {
+  background: $green;
+}
+
 section:not(.hero) {
   padding: 145px 0;
+  @media (max-width: 768px) {
+    padding: 100px 0;
+  }
 }
 
 .dl-inline {

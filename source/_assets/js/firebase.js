@@ -1,6 +1,11 @@
 import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, push } from "firebase/database";
 
+import { gsap } from "gsap";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+gsap.registerPlugin(ScrollToPlugin);
+
 const firebaseConfig = {
   apiKey: "AIzaSyA14xcELq2lr3IvR1Oa_WsJK8PfPoueFKc",
   authDomain: "iamtomfarrellsite.firebaseapp.com",
@@ -24,13 +29,36 @@ function submitForm(e) {
   var lastName = getInputVal("lastName");
   var email = getInputVal("email");
   var phone = getInputVal("phone");
+  var phone2 = getInputVal("phone2");
+  var phone3 = getInputVal("phone3");
   var subject = getInputVal("subject");
   var message = getInputVal("message");
 
   // Save message
-  saveMessage(firstName, lastName, email, phone, subject, message);
+  saveMessage(
+    firstName,
+    lastName,
+    email,
+    phone,
+    phone2,
+    phone3,
+    subject,
+    message
+  );
 
-  // show alert
+  // Scroll alert into view
+  gsap.to(window, {
+    scrollTo: "#contact",
+    duration: 0.65,
+    ease: "power3.out",
+  });
+
+  // Show alert
+  document.querySelector(".form-alert").style.display = "block";
+
+  setTimeout(function () {
+    document.querySelector(".form-alert").style.display = "none";
+  }, 4000);
 
   // clear form
   document.getElementById("contactForm").reset();
@@ -42,7 +70,16 @@ function getInputVal(id) {
 }
 
 // Save message to firebase
-function saveMessage(firstName, lastName, email, phone, subject, message) {
+function saveMessage(
+  firstName,
+  lastName,
+  email,
+  phone,
+  phone2,
+  phone3,
+  subject,
+  message
+) {
   const db = getDatabase();
   const postListRef = ref(db);
   const newPostRef = push(postListRef);
@@ -51,6 +88,8 @@ function saveMessage(firstName, lastName, email, phone, subject, message) {
     lastName: lastName,
     email: email,
     phone: phone,
+    phone2: phone2,
+    phone3: phone3,
     subject: subject,
     message: message,
   });

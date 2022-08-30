@@ -19359,10 +19359,10 @@ var animations = function () {
   //     smooth: 1,
   //   });
   // }
-  function heroLoad() {
-    var heroSection = document.querySelector("#hero");
-    var herosectiontl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
-    herosectiontl.to(heroSection, {
+  function bodyLoad() {
+    var theBody = document.querySelector("body");
+    var thebodytl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
+    thebodytl.to(theBody, {
       duration: 1,
       opacity: 1
     });
@@ -19370,6 +19370,10 @@ var animations = function () {
 
   function logo() {
     var logotl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
+    logotl.set(".nav-item", {
+      opacity: 0,
+      scale: 0.5
+    });
     logotl.from("#logo-t", {
       delay: 1,
       duration: 1,
@@ -19383,9 +19387,36 @@ var animations = function () {
       duration: 3,
       drawSVG: "0%"
     });
-    logotl.to(".navbar-nav", {
-      opacity: 1
-    }, "<");
+
+    if (desktopSize) {
+      logotl.to(".nav-item", {
+        duration: 0.3,
+        opacity: 1,
+        scale: 1,
+        stagger: {
+          each: 0.3
+        }
+      }, "<");
+    }
+
+    gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(".outerline", {
+      drawSVG: "0",
+      autoAlpha: 1
+    });
+    var logoTF = document.querySelector("#logo-tf-svg");
+    var action = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
+      paused: true
+    }).to(".outerline", {
+      drawSVG: "100%",
+      duration: 1,
+      ease: "power1.inOut"
+    });
+    logoTF.addEventListener("mouseenter", function () {
+      action.timeScale(1).play();
+    });
+    logoTF.addEventListener("mouseleave", function () {
+      action.timeScale(3).reverse();
+    });
   }
 
   function hero() {
@@ -19425,7 +19456,6 @@ var animations = function () {
     }, "<").set(sun, {
       opacity: 0
     }).to(nightSky, {
-      yPercent: 0,
       opacity: 1,
       duration: 1
     }, "<").to(heroNightMountainsBackground, {
@@ -19476,13 +19506,13 @@ var animations = function () {
 
   return {
     // scrollSmoother: scrollSmoother,
-    heroLoad: heroLoad,
+    bodyLoad: bodyLoad,
     logo: logo,
     hero: hero
   };
 }();
 
-animations.heroLoad();
+animations.bodyLoad();
 animations.logo();
 animations.hero();
 
@@ -19498,8 +19528,13 @@ animations.hero();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "./node_modules/firebase/app/dist/index.esm.js");
 /* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/database */ "./node_modules/firebase/database/dist/index.esm.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gsap/ScrollToPlugin */ "./node_modules/gsap/ScrollToPlugin.js");
 
 
+
+
+gsap__WEBPACK_IMPORTED_MODULE_2__.gsap.registerPlugin(gsap_ScrollToPlugin__WEBPACK_IMPORTED_MODULE_3__.ScrollToPlugin);
 var firebaseConfig = {
   apiKey: "AIzaSyA14xcELq2lr3IvR1Oa_WsJK8PfPoueFKc",
   authDomain: "iamtomfarrellsite.firebaseapp.com",
@@ -19520,11 +19555,23 @@ function submitForm(e) {
   var lastName = getInputVal("lastName");
   var email = getInputVal("email");
   var phone = getInputVal("phone");
+  var phone2 = getInputVal("phone2");
+  var phone3 = getInputVal("phone3");
   var subject = getInputVal("subject");
   var message = getInputVal("message"); // Save message
 
-  saveMessage(firstName, lastName, email, phone, subject, message); // show alert
-  // clear form
+  saveMessage(firstName, lastName, email, phone, phone2, phone3, subject, message); // Scroll alert into view
+
+  gsap__WEBPACK_IMPORTED_MODULE_2__.gsap.to(window, {
+    scrollTo: "#contact",
+    duration: 0.65,
+    ease: "power3.out"
+  }); // Show alert
+
+  document.querySelector(".form-alert").style.display = "block";
+  setTimeout(function () {
+    document.querySelector(".form-alert").style.display = "none";
+  }, 4000); // clear form
 
   document.getElementById("contactForm").reset();
 } // Function to get form values
@@ -19535,7 +19582,7 @@ function getInputVal(id) {
 } // Save message to firebase
 
 
-function saveMessage(firstName, lastName, email, phone, subject, message) {
+function saveMessage(firstName, lastName, email, phone, phone2, phone3, subject, message) {
   var db = (0,firebase_database__WEBPACK_IMPORTED_MODULE_1__.getDatabase)();
   var postListRef = (0,firebase_database__WEBPACK_IMPORTED_MODULE_1__.ref)(db);
   var newPostRef = (0,firebase_database__WEBPACK_IMPORTED_MODULE_1__.push)(postListRef);
@@ -19544,10 +19591,51 @@ function saveMessage(firstName, lastName, email, phone, subject, message) {
     lastName: lastName,
     email: email,
     phone: phone,
+    phone2: phone2,
+    phone3: phone3,
     subject: subject,
     message: message
   });
 }
+
+/***/ }),
+
+/***/ "./source/_assets/js/global.js":
+/*!*************************************!*\
+  !*** ./source/_assets/js/global.js ***!
+  \*************************************/
+/***/ (() => {
+
+// Define our viewportWidth variable
+window.viewportWidth;
+window.mobileSize;
+window.desktopSize; // Set/update the viewportWidth value
+
+var setViewportWidth = function setViewportWidth() {
+  viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+}; // Log the viewport width into the console
+
+
+var logWidth = function logWidth() {
+  if (viewportWidth > 991) {
+    desktopSize = true;
+    mobileSize = false; // console.log("desktop:" + desktopSize);
+    // console.log("mobile:" + mobileSize);
+  } else {
+    desktopSize = false;
+    mobileSize = true; // console.log("desktop:" + desktopSize);
+    // console.log("mobile:" + mobileSize);
+  }
+}; // Set our initial width and log it
+
+
+setViewportWidth();
+logWidth(); // On resize events, recalculate and log
+
+window.addEventListener("resize", function () {
+  setViewportWidth();
+  logWidth();
+}, false);
 
 /***/ }),
 
@@ -19556,6 +19644,8 @@ function saveMessage(firstName, lastName, email, phone, subject, message) {
   !*** ./source/_assets/js/main.js ***!
   \***********************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ./global */ "./source/_assets/js/global.js");
 
 __webpack_require__(/*! ./firebase */ "./source/_assets/js/firebase.js");
 
@@ -19601,20 +19691,6 @@ var navigation = function () {
     });
   }
 
-  function scrollTo() {
-    var navLinks = document.querySelectorAll(".nav-link");
-    navLinks.forEach(function (navLink) {
-      navLink.addEventListener("click", function (e) {
-        e.preventDefault();
-        gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(window, {
-          scrollTo: navLink.hash,
-          duration: 0.65,
-          ease: "power3.out"
-        });
-      });
-    });
-  }
-
   function toTop() {
     var topLink = document.getElementById("btn-top");
     topLink.addEventListener("click", function (e) {
@@ -19627,15 +19703,90 @@ var navigation = function () {
     });
   }
 
+  function navScrollTo() {
+    var navbarToggler = document.querySelector(".navbar-toggler"),
+        hamburger = document.querySelector("#hamburger"),
+        theBody = document.querySelector("body"),
+        navLinks = document.querySelectorAll(".nav-link");
+    navLinks.forEach(function (navLink) {
+      navLink.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        if (mobileSize) {
+          console.log("mobile");
+          toggleMenu();
+          gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(window, {
+            scrollTo: navLink.hash,
+            duration: 0.65,
+            ease: "power3.out"
+          });
+        } else {
+          gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(window, {
+            scrollTo: navLink.hash,
+            duration: 0.65,
+            ease: "power3.out"
+          });
+          console.log("desktop");
+        }
+      });
+    });
+    navbarToggler.addEventListener("click", function () {
+      toggleHamburger();
+
+      if (theBody.classList.contains("freeze")) {
+        theBody.classList.remove("freeze");
+      } else {
+        theBody.classList.add("freeze");
+        var navfadeintl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
+        gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(".nav-item", {
+          opacity: 0,
+          scale: 0
+        });
+        navfadeintl.to(".nav-item", {
+          delay: 0.5,
+          duration: 0.3,
+          opacity: 1,
+          scale: 1,
+          stagger: {
+            each: 0.3
+          }
+        }, "<");
+      }
+    });
+
+    function toggleMenu() {
+      navbarToggler.click();
+    }
+
+    function toggleHamburger() {
+      if (navbarToggler.classList.contains("collapsed")) {
+        hamburger.classList.remove("is-active");
+      } else {
+        hamburger.classList.add("is-active");
+      }
+    }
+
+    function closeMenuOnResize() {
+      window.addEventListener("resize", function () {
+        if (theBody.classList.contains("freeze")) {
+          toggleMenu();
+          theBody.classList.remove("freeze");
+        }
+      }, false);
+    }
+
+    closeMenuOnResize();
+  }
+
   return {
+    navScrollTo: navScrollTo,
     pinNav: pinNav,
-    scrollTo: scrollTo,
     toTop: toTop
   };
 }();
 
+navigation.navScrollTo();
 navigation.pinNav();
-navigation.scrollTo();
 navigation.toTop();
 
 /***/ }),

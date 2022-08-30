@@ -15,10 +15,10 @@ const animations = (function () {
   //   });
   // }
 
-  function heroLoad() {
-    let heroSection = document.querySelector("#hero");
-    let herosectiontl = gsap.timeline();
-    herosectiontl.to(heroSection, {
+  function bodyLoad() {
+    let theBody = document.querySelector("body");
+    let thebodytl = gsap.timeline();
+    thebodytl.to(theBody, {
       duration: 1,
       opacity: 1,
     });
@@ -26,6 +26,10 @@ const animations = (function () {
 
   function logo() {
     let logotl = gsap.timeline();
+    logotl.set(".nav-item", {
+      opacity: 0,
+      scale: 0.5,
+    });
     logotl.from("#logo-t", {
       delay: 1,
       duration: 1,
@@ -39,13 +43,40 @@ const animations = (function () {
       duration: 3,
       drawSVG: "0%",
     });
-    logotl.to(
-      ".navbar-nav",
-      {
-        opacity: 1,
-      },
-      "<"
-    );
+
+    if (desktopSize) {
+      logotl.to(
+        ".nav-item",
+        {
+          duration: 0.3,
+          opacity: 1,
+          scale: 1,
+
+          stagger: {
+            each: 0.3,
+          },
+        },
+        "<"
+      );
+    }
+
+    gsap.set(".outerline", { drawSVG: "0", autoAlpha: 1 });
+
+    let logoTF = document.querySelector("#logo-tf-svg");
+
+    let action = gsap.timeline({ paused: true }).to(".outerline", {
+      drawSVG: "100%",
+      duration: 1,
+      ease: "power1.inOut",
+    });
+
+    logoTF.addEventListener("mouseenter", () => {
+      action.timeScale(1).play();
+    });
+
+    logoTF.addEventListener("mouseleave", () => {
+      action.timeScale(3).reverse();
+    });
   }
 
   function hero() {
@@ -109,7 +140,6 @@ const animations = (function () {
       .to(
         nightSky,
         {
-          yPercent: 0,
           opacity: 1,
           duration: 1,
         },
@@ -216,11 +246,11 @@ const animations = (function () {
 
   return {
     // scrollSmoother: scrollSmoother,
-    heroLoad: heroLoad,
+    bodyLoad: bodyLoad,
     logo: logo,
     hero: hero,
   };
 })();
-animations.heroLoad();
+animations.bodyLoad();
 animations.logo();
 animations.hero();
