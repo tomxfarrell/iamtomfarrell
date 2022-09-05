@@ -463,6 +463,8 @@
 
 
   @media (max-width: 500px) {
+    height: 105vh;
+    
     .hero-day-trees,
     .hero-night-trees,
     .hero-day-mountains-foreground,
@@ -503,6 +505,7 @@
     .hero-day-mountains-foreground,
     .hero-night-mountains-foreground {
       bottom: 11vh;
+      left: -5px;
     }
     .hero-day-mountains-midground,
     .hero-night-mountains-midground {

@@ -11302,6 +11302,11 @@ footer .footer-row .top-col {
     margin-bottom: 8px;
   }
 }
+@media (max-width: 500px) {
+  footer {
+    padding-bottom: 60px;
+  }
+}
 
 .modal-backdrop {
   background: #19183A;
@@ -11860,6 +11865,9 @@ footer .footer-row .top-col {
   }
 }
 @media (max-width: 500px) {
+  #hero {
+    height: 105vh;
+  }
   #hero .hero-day-trees,
 #hero .hero-night-trees,
 #hero .hero-day-mountains-foreground,
@@ -11898,6 +11906,7 @@ footer .footer-row .top-col {
   #hero .hero-day-mountains-foreground,
 #hero .hero-night-mountains-foreground {
     bottom: 11vh;
+    left: -5px;
   }
   #hero .hero-day-mountains-midground,
 #hero .hero-night-mountains-midground {
@@ -11973,6 +11982,11 @@ footer .footer-row .top-col {
   }
   #about .row-about .col-photo {
     padding-top: 25px;
+  }
+}
+@media (max-width: 500px) {
+  #about {
+    background-position: -3px 100%;
   }
 }
 
