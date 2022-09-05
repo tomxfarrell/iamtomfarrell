@@ -19440,7 +19440,6 @@ var animations = function () {
         hgroup = document.querySelector(".hgroup"),
         aboutSection = document.querySelector("#about"),
         aboutSectionContainer = document.querySelector(".about-container");
-    gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh();
     var mm = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.matchMedia(); // add a media query. When it matches, the associated function will run
 
     mm.add("(min-width: 1031px)", function () {
@@ -19671,6 +19670,7 @@ var animations = function () {
         duration: 0.3
       });
     });
+    gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh();
   }
 
   return {
