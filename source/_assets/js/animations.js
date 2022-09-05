@@ -39,14 +39,7 @@ const animations = (function () {
       duration: 1,
       opacity: 0,
     });
-    logotl.from(
-      ".navbar-toggler",
-      {
-        duration: 1,
-        opacity: 0,
-      },
-      "<"
-    );
+
     logotl.from("#logo-line", {
       duration: 3,
       drawSVG: "0%",
@@ -123,12 +116,6 @@ const animations = (function () {
     mm.add("(min-width: 1031px)", () => {
       gsap.set(moon, {
         opacity: 0,
-      });
-
-      gsap.to(hgroup, {
-        delay: 3,
-        opacity: 1,
-        duration: 2,
       });
 
       let tl = gsap
@@ -275,12 +262,6 @@ const animations = (function () {
         opacity: 0,
       });
 
-      gsap.to(hgroup, {
-        delay: 3,
-        opacity: 1,
-        duration: 2,
-      });
-
       let tl = gsap
         .timeline({
           scrollTrigger: {
@@ -423,12 +404,6 @@ const animations = (function () {
     mm.add("(max-width: 500px)", () => {
       gsap.set(moon, {
         opacity: 0,
-      });
-
-      gsap.to(hgroup, {
-        delay: 3,
-        opacity: 1,
-        duration: 2,
       });
 
       let tl = gsap
