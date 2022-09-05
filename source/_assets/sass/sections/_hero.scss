@@ -528,7 +528,8 @@
 
 
   @media (max-width: 415px) {
-  
+    height: 100%;
+    min-height: 100%;
     .hgroup {
       // margin-top: 3vh;
       margin-top: -2vh;
