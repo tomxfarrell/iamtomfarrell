@@ -103,150 +103,145 @@ const animations = (function () {
       aboutSectionContainer = document.querySelector(".about-container");
 
     let mm = gsap.matchMedia();
-    gsap.matchMediaRefresh();
+
     // add a media query. When it matches, the associated function will run
-    mm.add("(min-width: 1031px)", () => {
+    mm.add("(max-width: 500px)", () => {
       gsap.set(moon, {
         opacity: 0,
       });
 
-      let tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: hero,
-            start: "top top",
-            end: "+=100%",
-            pin: true,
-            scrub: 2,
-            markers: false,
-            id: "hero",
-            toggleActions: "play none reverse none",
-          },
-        })
-        .to(
-          sun,
-          {
-            yPercent: 75,
-            duration: 1,
-          },
-          "<"
-        )
-        .set(sun, {
-          opacity: 0,
-        })
-        .to(
-          nightSky,
-          {
-            opacity: 1,
-            duration: 1,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsBackground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroDayMountainsBackground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroDayMountainsMidground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsMidground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroNightMountainsForeground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(heroDayMountainsForeground, {
-          opacity: 0,
-          duration: 0.3,
-        })
-
-        .to(
-          heroNightTrees,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .set(heroDayTrees, {
-          opacity: 0,
-        })
-
-        .to(stars, {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: hero,
+          start: "top top",
+          end: "+=100%",
+          pin: true,
+          scrub: 2,
+          markers: false,
+          id: "hero",
+          toggleActions: "play none reverse none",
+        },
+      });
+      tl.to(
+        sun,
+        {
+          yPercent: 55,
+          duration: 1,
+        },
+        "<"
+      );
+      tl.set(sun, {
+        opacity: 0,
+      });
+      tl.to(
+        nightSky,
+        {
           opacity: 1,
           duration: 1,
-        })
-        .to(moon, {
-          yPercent: 74,
-          opacity: 0.7,
-          duration: 2,
-        })
-        .to(
-          hgroup,
-          {
-            yPercent: 30,
-            opacity: 0,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsForeground,
-          {
-            yPercent: -30,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightTrees,
-          {
-            yPercent: -40,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          aboutSection,
-          {
-            yPercent: -7,
-            duration: 1,
-          },
-          "-=4"
-        )
-        .to(aboutSectionContainer, {
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsBackground,
+        {
           opacity: 1,
           duration: 0.3,
-        });
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsBackground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsMidground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsMidground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(heroDayMountainsForeground, {
+        opacity: 0,
+        duration: 0.3,
+      });
+      tl.to(
+        heroNightTrees,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.set(heroDayTrees, {
+        opacity: 0,
+      });
+      tl.to(stars, {
+        opacity: 1,
+        duration: 1,
+      });
+      tl.to(moon, {
+        yPercent: 73,
+        opacity: 0.7,
+        duration: 2,
+      });
+      tl.to(
+        hgroup,
+        {
+          yPercent: 30,
+          opacity: 0,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          yPercent: -30,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightTrees,
+        {
+          yPercent: -25,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        aboutSection,
+        {
+          yPercent: -4,
+          duration: 1,
+        },
+        "-=4"
+      );
+      tl.to(aboutSectionContainer, {
+        opacity: 1,
+        duration: 0.3,
+      });
     });
 
     mm.add("(max-width: 1030px)", () => {
@@ -254,292 +249,281 @@ const animations = (function () {
         opacity: 0,
       });
 
-      let tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: hero,
-            start: "top top",
-            end: "+=100%",
-            pin: true,
-            scrub: 2,
-            markers: false,
-            id: "hero",
-            toggleActions: "play none reverse none",
-          },
-        })
-        .to(
-          sun,
-          {
-            yPercent: 55,
-            duration: 1,
-          },
-          "<"
-        )
-        .set(sun, {
-          opacity: 0,
-        })
-        .to(
-          nightSky,
-          {
-            opacity: 1,
-            duration: 1,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsBackground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroDayMountainsBackground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroDayMountainsMidground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsMidground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroNightMountainsForeground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(heroDayMountainsForeground, {
-          opacity: 0,
-          duration: 0.3,
-        })
-
-        .to(
-          heroNightTrees,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .set(heroDayTrees, {
-          opacity: 0,
-        })
-
-        .to(stars, {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: hero,
+          start: "top top",
+          end: "+=100%",
+          pin: true,
+          scrub: 2,
+          markers: false,
+          id: "hero",
+          toggleActions: "play none reverse none",
+        },
+      });
+      tl.to(
+        sun,
+        {
+          yPercent: 55,
+          duration: 1,
+        },
+        "<"
+      );
+      tl.set(sun, {
+        opacity: 0,
+      });
+      tl.to(
+        nightSky,
+        {
           opacity: 1,
           duration: 1,
-        })
-        .to(moon, {
-          yPercent: 73,
-          opacity: 0.7,
-          duration: 2,
-        })
-        .to(
-          hgroup,
-          {
-            yPercent: 30,
-            opacity: 0,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsForeground,
-          {
-            yPercent: -30,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightTrees,
-          {
-            yPercent: -25,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          aboutSection,
-          {
-            yPercent: -7,
-            duration: 1,
-          },
-          "-=4"
-        )
-        .to(aboutSectionContainer, {
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsBackground,
+        {
           opacity: 1,
           duration: 0.3,
-        });
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsBackground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsMidground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsMidground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(heroDayMountainsForeground, {
+        opacity: 0,
+        duration: 0.3,
+      });
+      tl.to(
+        heroNightTrees,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.set(heroDayTrees, {
+        opacity: 0,
+      });
+      tl.to(stars, {
+        opacity: 1,
+        duration: 1,
+      });
+      tl.to(moon, {
+        yPercent: 73,
+        opacity: 0.7,
+        duration: 2,
+      });
+      tl.to(
+        hgroup,
+        {
+          yPercent: 30,
+          opacity: 0,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          yPercent: -30,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightTrees,
+        {
+          yPercent: -25,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        aboutSection,
+        {
+          yPercent: -7,
+          duration: 1,
+        },
+        "-=4"
+      );
+      tl.to(aboutSectionContainer, {
+        opacity: 1,
+        duration: 0.3,
+      });
     });
 
-    mm.add("(max-width: 500px)", () => {
+    mm.add("(min-width: 1031px)", () => {
       gsap.set(moon, {
         opacity: 0,
       });
 
-      let tl = gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: hero,
-            start: "top top",
-            end: "+=100%",
-            pin: true,
-            scrub: 2,
-            markers: false,
-            id: "hero",
-            toggleActions: "play none reverse none",
-          },
-        })
-        .to(
-          sun,
-          {
-            yPercent: 55,
-            duration: 1,
-          },
-          "<"
-        )
-        .set(sun, {
-          opacity: 0,
-        })
-        .to(
-          nightSky,
-          {
-            opacity: 1,
-            duration: 1,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsBackground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroDayMountainsBackground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroDayMountainsMidground,
-          {
-            opacity: 0,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsMidground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-
-        .to(
-          heroNightMountainsForeground,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .to(heroDayMountainsForeground, {
-          opacity: 0,
-          duration: 0.3,
-        })
-
-        .to(
-          heroNightTrees,
-          {
-            opacity: 1,
-            duration: 0.3,
-          },
-          "<"
-        )
-        .set(heroDayTrees, {
-          opacity: 0,
-        })
-
-        .to(stars, {
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: hero,
+          start: "top top",
+          end: "+=100%",
+          pin: true,
+          scrub: 2,
+          markers: false,
+          id: "hero",
+          toggleActions: "play none reverse none",
+        },
+      });
+      tl.to(
+        sun,
+        {
+          yPercent: 75,
+          duration: 1,
+        },
+        "<"
+      );
+      tl.set(sun, {
+        opacity: 0,
+      });
+      tl.to(
+        nightSky,
+        {
           opacity: 1,
           duration: 1,
-        })
-        .to(moon, {
-          yPercent: 73,
-          opacity: 0.7,
-          duration: 2,
-        })
-        .to(
-          hgroup,
-          {
-            yPercent: 30,
-            opacity: 0,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightMountainsForeground,
-          {
-            yPercent: -30,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          heroNightTrees,
-          {
-            yPercent: -25,
-            duration: 4,
-          },
-          "<"
-        )
-        .to(
-          aboutSection,
-          {
-            yPercent: -4,
-            duration: 1,
-          },
-          "-=4"
-        )
-        .to(aboutSectionContainer, {
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsBackground,
+        {
           opacity: 1,
           duration: 0.3,
-        });
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsBackground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroDayMountainsMidground,
+        {
+          opacity: 0,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsMidground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.to(heroDayMountainsForeground, {
+        opacity: 0,
+        duration: 0.3,
+      });
+      tl.to(
+        heroNightTrees,
+        {
+          opacity: 1,
+          duration: 0.3,
+        },
+        "<"
+      );
+      tl.set(heroDayTrees, {
+        opacity: 0,
+      });
+      tl.to(stars, {
+        opacity: 1,
+        duration: 1,
+      });
+      tl.to(moon, {
+        yPercent: 74,
+        opacity: 0.7,
+        duration: 2,
+      });
+      tl.to(
+        hgroup,
+        {
+          yPercent: 30,
+          opacity: 0,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightMountainsForeground,
+        {
+          yPercent: -30,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        heroNightTrees,
+        {
+          yPercent: -40,
+          duration: 4,
+        },
+        "<"
+      );
+      tl.to(
+        aboutSection,
+        {
+          yPercent: -7,
+          duration: 1,
+        },
+        "-=4"
+      );
+      tl.to(aboutSectionContainer, {
+        opacity: 1,
+        duration: 0.3,
+      });
     });
   }
 
   return {
-    // scrollSmoother: scrollSmoother,
     bodyLoad: bodyLoad,
     logo: logo,
     hero: hero,
