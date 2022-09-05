@@ -421,6 +421,8 @@ const animations = (function () {
     });
 
     mm.add("(max-width: 500px)", () => {
+      ScrollTrigger.refresh();
+
       gsap.set(moon, {
         opacity: 0,
       });
