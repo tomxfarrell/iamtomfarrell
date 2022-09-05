@@ -6,6 +6,7 @@
 /.vscode/
 npm-debug.log
 gsap-bonus.tgz
+locked.txt
 
 # Optional ignores
 # /build_staging/

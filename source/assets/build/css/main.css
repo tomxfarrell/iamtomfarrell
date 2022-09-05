@@ -11330,7 +11330,6 @@ textarea.form-control-lg {
   }
   #hero .hero-sun {
     top: 27vh;
-    transform: scale(0.5);
   }
   #hero .hero-day-trees,
 #hero .hero-night-trees {
@@ -11352,7 +11351,6 @@ textarea.form-control-lg {
   }
   #hero .hero-moon {
     top: -10vh;
-    transform: scale(0.5);
   }
   #hero .hero-stars {
     top: -3vh;
@@ -11376,7 +11374,6 @@ textarea.form-control-lg {
   }
   #hero .hero-sun {
     top: 33vh;
-    transform: scale(0.5);
   }
 }
 

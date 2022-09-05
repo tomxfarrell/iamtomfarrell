@@ -117,7 +117,7 @@ const animations = (function () {
           end: "+=100%",
           pin: true,
           scrub: 2,
-          markers: false,
+          markers: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -244,7 +244,7 @@ const animations = (function () {
       });
     });
 
-    mm.add("(max-width: 1030px)", () => {
+    mm.add("(min-width: 501px) and (max-width: 1030px)", () => {
       gsap.set(moon, {
         opacity: 0,
       });

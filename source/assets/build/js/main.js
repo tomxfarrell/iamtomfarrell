@@ -19441,7 +19441,7 @@ var animations = function () {
           end: "+=100%",
           pin: true,
           scrub: 2,
-          markers: false,
+          markers: true,
           id: "hero",
           toggleActions: "play none reverse none"
         }
@@ -19519,7 +19519,7 @@ var animations = function () {
         duration: 0.3
       });
     });
-    mm.add("(max-width: 1030px)", function () {
+    mm.add("(min-width: 501px) and (max-width: 1030px)", function () {
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
       });
