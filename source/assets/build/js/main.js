@@ -19363,7 +19363,7 @@ var animations = function () {
     var theBody = document.querySelector("body");
     var thebodytl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline();
     thebodytl.to(theBody, {
-      duration: 1,
+      duration: 2,
       opacity: 1
     });
   }
@@ -19383,6 +19383,10 @@ var animations = function () {
       duration: 1,
       opacity: 0
     });
+    logotl.from(".navbar-toggler", {
+      duration: 1,
+      opacity: 0
+    }, "<");
     logotl.from("#logo-line", {
       duration: 3,
       drawSVG: "0%"
@@ -19441,6 +19445,11 @@ var animations = function () {
     mm.add("(min-width: 1031px)", function () {
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
+      });
+      gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(hgroup, {
+        delay: 3,
+        opacity: 1,
+        duration: 2
       });
       var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
         scrollTrigger: {
@@ -19513,6 +19522,11 @@ var animations = function () {
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
       });
+      gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(hgroup, {
+        delay: 3,
+        opacity: 1,
+        duration: 2
+      });
       var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
         scrollTrigger: {
           trigger: hero,
@@ -19583,6 +19597,11 @@ var animations = function () {
     mm.add("(max-width: 500px)", function () {
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
+      });
+      gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.to(hgroup, {
+        delay: 3,
+        opacity: 1,
+        duration: 2
       });
       var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
         scrollTrigger: {
