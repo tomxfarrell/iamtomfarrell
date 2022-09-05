@@ -1,3 +1,4 @@
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -7,12 +8,46 @@ body {
   opacity: 0;
 }
 
-main a, footer a {
-  color: $purple;
+.link-main {
+  color: $green;
   text-decoration: none;
   transition: all .3s ease;
   &:hover {
     color: $blue-gray;
+  }
+}
+
+a.with-icon {
+  display: inline-flex;
+  align-items: center;
+  color: $purple-blue;
+  text-decoration: none;
+  transition: all .3s ease;
+  .link-icon {
+    width: 10px;
+    margin-left: 5px;
+    fill: $purple-blue;
+    transform: translateX(0);
+    transition: all .3s ease;
+  }
+  &:hover {
+    color: $blue-gray;
+    .link-icon {
+      fill: $blue-gray;
+      transform: translateX(3px);
+    }
+  }
+  &.green {
+    color: $green;
+    .link-icon {
+      fill: $green;
+    }
+    &:hover {
+      color: $blue-gray;
+      .link-icon {
+        fill: $blue-gray;
+      }
+    }
   }
 }
 
@@ -26,6 +61,7 @@ main a, footer a {
   width: 150px;
   padding: 10px 15px;
   text-transform: uppercase;
+  display: block;
   transition: all 0.3s ease;
   &:hover {
     background-color: $not-black;
@@ -33,6 +69,13 @@ main a, footer a {
   }
 }
 
+
+// global focus
+a:focus-visible {
+  outline: 2px solid $green;
+  box-shadow: 0 0 0 0.25rem rgb(88 226 139 / 25%);
+  border-color: $green;
+}
 
 ::-moz-selection { 
   background: $green;
@@ -44,12 +87,21 @@ main a, footer a {
 
 section:not(.hero) {
   padding: 145px 0;
-  @media (max-width: 768px) {
-    padding: 100px 0;
-  }
 }
 
 .dl-inline {
   display: inline-flex;
 }
 
+@media (max-width: 768px) {
+  section:not(.hero) {
+    padding: 100px 0;
+  }
+}
+
+@media (min-width: $break-wide) {
+  body {
+    font-size: 25px;
+    line-height: 38px;
+  }
+}

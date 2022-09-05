@@ -3,10 +3,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/gb-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>Graphite Bio</h3>
             <h4>Custom Wordpress CMS</h4>
             <div class="tags">
@@ -14,6 +14,7 @@
               <div>SASS/CSS</div>
               <div>HTML</div>
               <div>PHP</div>
+              <div>Bootstrap</div>
               <div>GSAP</div>
             </div>
             
@@ -34,17 +35,18 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/ijl-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>It's Just Lunch</h3>
             <h4>Custom CMS</h4>
             <div class="tags">
               <div>JavaScript</div>
               <div>SASS/CSS</div>
               <div>HTML</div>
-              <div>PHP</div>
+              <div>Bootstrap</div>
+              <div>GSAP</div>
             </div>
             
             <a href="http://www.itsjustlunch.com" target="_blank" class="btn-main">Visit Website</a>
@@ -64,10 +66,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/arcellx-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>Arcellx</h3>
             <h4>Custom Wordpress CMS</h4>
             <div class="tags">
@@ -76,6 +78,7 @@
               <div>HTML</div>
               <div>PHP</div>
               <div>GSAP</div>
+              <div>Bootstrap</div>
               <div>API Integration</div>
             </div>
             
@@ -96,10 +99,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/mmh-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>Multiple Myeloma Horizon</h3>
             <h4>Jigsaw</h4>
             <div class="tags">
@@ -107,6 +110,7 @@
               <div>SASS/CSS</div>
               <div>HTML</div>
               <div>PHP</div>
+              <div>Bootstrap</div>
               <div>GSAP</div>
             </div>
             
@@ -128,10 +132,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/em-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>Explore Mmore</h3>
             <h4>Jigsaw</h4>
             <div class="tags">
@@ -139,6 +143,7 @@
               <div>SASS/CSS</div>
               <div>HTML</div>
               <div>PHP</div>
+              <div>Bootstrap</div>
               <div>GSAP</div>
             </div>
             
@@ -160,10 +165,10 @@
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
-          <div class="col-md-6">
-            <img src="assets/images/sample-portfolio.jpg" alt="">
+          <div class="col-md-7 col-screens">
+            <img src="/assets/images/ultra-screens.png" alt="">
           </div>
-          <div class="col-md-6">
+          <div class="col-md-5">
             <h3>Ultragenyx</h3>
             <h4>Custom Wordpress CMS</h4>
             <div class="tags">
@@ -171,6 +176,7 @@
               <div>SASS/CSS</div>
               <div>HTML</div>
               <div>PHP</div>
+              <div>Bootstrap</div>
               <div>GSAP</div>
               <div>API Integration</div>
             </div>

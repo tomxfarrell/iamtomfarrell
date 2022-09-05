@@ -3,26 +3,56 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
 
   .hgroup {
-    // margin-top: 70px;
-    margin-top: 4vh;
+    margin-top: 6vh;
     z-index: 9;
     position: relative;
+    h1 {
+      text-shadow: 0px 1px 2px #e3e3e6;
+    }
+    h2 {
+      color: $white;
+      font-size: 2.1vw;
+      line-height: 2.6vw;
+      font-weight: 700;
+      text-align: center;
+      text-transform: none;
+    }
+ 
+    @media (min-width: 1290px) {
+      h1 {
+        font-size: 5vw;
+        line-height: 5.5vw;
+        strong {
+          font-size: 7vw;
+        }
+      }
+    }
+    @media (min-width: 1920px) {
+      margin-top: 19vh;
+      h1 {
+        font-size: 72px;
+        line-height: 75px;
+        strong {
+          font-size: 115px;
+          line-height: 118px;
+        }
+      }
+      h2 {
+        font-size: 37px;
+        line-height: 40px;
+      }
+    }
+      
+   
+    
   }
 
-  h2 {
-    color: $white;
-    // font-size: 22px;
-    // line-height: 26px;
-    font-size: 2.1vw;
-    line-height: 2.6vw;
-    font-weight: 700;
-    text-align: center;
-    text-transform: none;
-  }
+  
 
   .hero-day-trees,
   .hero-night-trees,
@@ -46,28 +76,24 @@
     right: 0;
     margin: 0 auto;
     width: 258px;
-    // top: 13%;
     top: 13vh;
+    opacity: .85;
   }
 
   .hero-day-trees,
   .hero-night-trees {
     z-index: 12;
-    // bottom: -90px;
-    bottom: -13vh;
+    bottom: -31.7vh;
     width: 102vw;
   }
 
   .hero-night-trees {
     opacity: 0;
-    // bottom: -260px;
-    bottom: -36.7vh;
   }
 
   .hero-day-mountains-foreground,
   .hero-night-mountains-foreground {
     z-index: 9;
-    // bottom: 40px;
     bottom: 7.2vh;
   }
 
@@ -78,7 +104,6 @@
   .hero-day-mountains-midground,
   .hero-night-mountains-midground {
     z-index: 8;
-    // bottom: 160px;
     bottom: 22vh;
   }
 
@@ -89,7 +114,6 @@
   .hero-day-mountains-background,
   .hero-night-mountains-background {
     z-index: 7;
-    // bottom: 220px;
     bottom: 30vh;
   }
 
@@ -105,8 +129,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 258px;
-    // top: -13%;
     top: -13vh;
+    opacity: .85;
   }
 
   .hero-night-mask {
@@ -115,12 +139,412 @@
     bottom: 0;
     mix-blend-mode: hard-light;
     opacity: 0;
+    height: 100vh;
   }
 
   .hero-stars {
     z-index: 2;
-    // top: -70px;
     top: -20vh;
     opacity: 0;
+  }
+
+
+  @media (max-width: 1230px) {
+    .hgroup {
+      margin-top: 6vh;
+    }
+
+    .hero-sun {
+      top: 16vh;
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -22.7vh;
+    }
+
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 10.2vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 25vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 33vh;
+    }
+    .hero-moon {
+      top: -10vh;
+    }
+    .hero-stars {
+      top: -17vh;
+    }
+  }
+
+
+  @media (max-width: 1150px) {
+    .hgroup {
+      margin-top: 9vh;
+    }
+
+    .hero-sun {
+      top: 19vh;
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -19.7vh;
+    }
+
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 13.2vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 22vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 30vh;
+    }
+    .hero-moon {
+      top: -8vh;
+    }
+    // .hero-stars {
+    //   top: -17vh;
+    // }
+  }
+
+
+  @media (max-width: 1024px) {
+    .hgroup {
+      margin-top: 10vh;
+    }
+    .hero-sun {
+      top: 20vh;
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -17.7vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 11.2vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 24vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 34vh;
+    }
+    .hero-moon {
+      top: -7vh;
+    }
+    .hero-stars {
+      top: -15vh;
+    }
+  }
+
+
+  @media (max-width: 991px) {
+
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 1200px;
+    }
+    // .hgroup {
+    //   margin-top: 10vh;
+    // }
+
+    // .hero-sun {
+    //   top: 20vh;
+    // }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -13.7vh;
+    }
+
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 16.2vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 25vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 36vh;
+    }
+    // .hero-moon {
+    //   top: -7vh;
+    // }
+    // .hero-stars {
+    //   top: -15vh;
+    // }
+  }
+
+  
+  @media (max-width: 900px) {
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 1000px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 900px;
+    }
+
+    .hgroup {
+      margin-top: 1vh;
+      h1 {
+        strong {
+          font-size: 7vw;
+        }
+      }
+    }
+    .hero-sun {
+      top: 26vh;
+      transform: scale(.75);
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -13.8vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 15vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 23vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 36vh;
+    }
+    .hero-moon {
+      top: -5vh;
+      transform: scale(.75);
+    }
+    .hero-stars {
+      top: -11vh;
+    }
+  }
+
+
+  @media (max-width: 670px) {
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 750px;
+    }
+
+    .hgroup {
+      margin-top: 0vh;
+    }
+
+    .hero-sun {
+      top: 24vh;
+      // transform: scale(.5);
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -11.7vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 12vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 21vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 34vh;
+    }
+    .hero-moon {
+      top: -10vh;
+      // transform: scale(.5);
+    }
+    .hero-stars {
+      top: -10vh;
+    }
+
+  }
+
+
+
+  @media (max-width: 558px) {
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 700px;
+    }
+
+    .hgroup {
+      margin-top: 0vh;
+    }
+
+    .hero-sun {
+      top: 24vh;
+      transform: scale(.5);
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -10.7vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 12vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 21vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 34vh;
+    }
+    .hero-moon {
+      top: -10vh;
+      transform: scale(.5);
+    }
+    .hero-stars {
+      top: 4vh;
+    }
+
+  }
+
+
+  @media (max-width: 500px) {
+    .hero-day-trees,
+    .hero-night-trees,
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground,
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground,
+    .hero-day-mountains-background,
+    .hero-night-mountains-background,
+    .hero-night-mask,
+    .hero-stars  {
+      width: 700px;
+    }
+
+    .hgroup {
+      margin-top: 3vh;
+      h1 {
+        font-size: 45px;
+        line-height: normal;
+        strong {
+          font-size: 50px;
+          line-height: 54px;
+        }
+      }
+      h2 {
+      font-size: 16px;
+      line-height: 18px;
+      }
+    }
+    
+    .hero-sun {
+      top: 27vh;
+      transform: scale(.5);
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -11vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 11vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 20vh;
+    }
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 32vh;
+    }
+    .hero-moon {
+      top: -10vh;
+      transform: scale(.5);
+    }
+    .hero-stars {
+      top: -3vh;
+    }
+
+  }
+
+
+  @media (max-width: 415px) {
+    
+    .hgroup {
+      margin-top: 3vh;
+      h1 {
+        font-size: 42px;
+        line-height: normal;
+        strong {
+          font-size: 50px;
+          line-height: 52px;
+        }
+      }
+      h2 {
+      font-size: 18px;
+      line-height: 22px;
+      }
+    }
+    
+    .hero-sun {
+      top: 33vh;
+      transform: scale(.5);
+    }
+  
   }
 }

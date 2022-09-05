@@ -7,12 +7,15 @@ footer {
       margin-bottom: 0;
     }
   }
-  a:focus-visible {
-    box-shadow: none;
-    border: 0;
-    color: $green;
-    outline: none;
-  }
+
+  // a {
+  //   color: $purple-blue;
+  //   text-decoration: none;
+  //   transition: all .3s ease;
+  //   &:hover {
+  //     color: $blue-gray;
+  //   }
+  // }
 
   #btn-top {
     border: 0;
@@ -21,6 +24,11 @@ footer {
       width: 25px;
       height: 25px;
       fill: $green;
+    }
+    &:focus, &:focus-visible {
+      outline: 2px solid $green;
+      box-shadow: 0 0 0 0.25rem rgb(88 226 139 / 25%);
+      border-color: $green;
     }
   }
 
@@ -34,6 +42,17 @@ footer {
     }
     .top-col {
       margin-left: auto;
+    }
+  }
+
+  @media (min-width: $break-wide) {
+    
+    p {
+      font-size: 16px;
+      line-height: 20px;
+      &.copy {
+        margin-bottom: 8px;
+      }
     }
   }
 }

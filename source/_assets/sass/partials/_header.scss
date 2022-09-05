@@ -7,14 +7,14 @@ header {
   z-index: 13; /* higher than night mask */
   width: 100%;
 
-  // .nav-item {
-  //   opacity: 0; /* fade in on load */
-  // }
-  #logo-tf-svg {
-    width: 80px;
-    height: 89px;
+  .navbar-brand {
     margin-left: 15px;
+    #logo-tf-svg {
+      width: 80px;
+      height: 89px;
+    }
   }
+  
   .container-fluid {
     justify-content: space-between;
   }
@@ -59,7 +59,7 @@ header {
   }
 
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     .container {
       max-width: 100%;
       padding-left: 0;

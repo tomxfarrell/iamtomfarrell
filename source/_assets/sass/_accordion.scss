@@ -3,10 +3,6 @@
     background: transparent;
     border: 0;
     margin-bottom: 2em;
-    // .accordion-header {
-    //   margin-bottom: 1em;
-    // }
-
     .accordion-button {
       &:focus {
         box-shadow: none;
@@ -60,7 +56,6 @@
           width: 80px;
         }
       }
-
       &:not(.collapsed) {
         box-shadow: none;
         &:before {
@@ -68,9 +63,7 @@
           width: 100%;
         }
       }
-      
     }
-    
   }
   .accordion-body {
     padding-left: 0;
@@ -88,12 +81,17 @@
         }
       }
     }
-
     ul, p {
       color: $white;
-      font-size: 16px;
-      line-height: 21px;
     }
   }
-  
+
+  @media (max-width: $break-wide) {
+    .accordion-item {
+      .accordion-button, h3 {
+        font-size: 26px;
+        line-height: 38px;
+      }
+    }
+  }
 }

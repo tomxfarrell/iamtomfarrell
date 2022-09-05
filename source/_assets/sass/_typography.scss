@@ -39,16 +39,7 @@ h1 {
     font-weight: 900;
     display: block;
   }
-  
  
-  @media (min-width: 1290px) {
-    font-size: 5vw;
-    line-height: 5.5vw;
-    strong {
-      font-size: 7vw;
-    }
-  }
-  
 }
 
 h2, h3, h4 {
@@ -76,4 +67,15 @@ ul {
 
 strong {
   font-weight: 700;
+}
+
+@media (min-width: 1920px) {
+  p, ul {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  h3 {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }

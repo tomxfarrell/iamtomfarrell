@@ -8,10 +8,6 @@
   }
 }
 
-.form-label {
-
-}
-
 .form-text {
   font-size: 0.75em;
 }
@@ -28,6 +24,10 @@
   &:hover {
     background-color: $not-black;
     color: $green;
+  }
+  &:focus, &:focus-visible {
+    outline: 2px solid $not-black;
+    border-color: $not-black;
   }
 }
 

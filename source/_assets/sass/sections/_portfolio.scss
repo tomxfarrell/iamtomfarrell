@@ -5,16 +5,54 @@
     border: 0;
     outline-color: $green;
   }
+  a.locked-out {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    .locked-txt {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      display: block;
+      transform: translateY(-50%);
+      opacity: 1;
+      transition: all .3s ease;
+      svg {
+        width: 40px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        fill: $not-black;
+      }
+    }
+    // &:hover {
+    //   .locked-txt {
+    //     opacity: 1;
+
+    //   }
+    // }
+  }
   h2 {
     color: $white;
   }
   .row-portfolio {
     margin-bottom: 2em;
-    img {
-      max-width: 100%;
-    }
     .col-site {
       margin-bottom: 1.5em;
+      a {
+        img {
+          max-width: 100%;
+          transform: scale(1);
+          transition: all .3s ease;
+        }
+        &:hover {
+          img {
+            transform: scale(1.08);
+          }
+        }
+      }
     }
   }
 
@@ -22,5 +60,36 @@
     .col-concept {
       margin-bottom: 2em;
     }
+  }
+
+  .see-portfolio {
+    padding: 20px 0;
+    margin-bottom: 1em;
+    text-align: center;
+
+    p {
+      color: $white;
+    }
+    a.with-icon {
+      display: inline-flex;
+      align-items: center;
+      // font-weight: 700;
+      color: $green;
+      text-decoration: none;
+      transition: all .3s ease;
+      .link-icon {
+        width: 15px;
+        margin-left: 10px;
+        fill: $green;
+      }
+      &:hover {
+        color: $blue-gray;
+        .link-icon {
+          fill: $blue-gray;
+          transform: translateX(3px);
+        }
+      }
+    }
+
   }
 }
