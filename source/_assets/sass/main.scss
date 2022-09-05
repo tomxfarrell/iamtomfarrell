@@ -14,6 +14,7 @@ $container-max-widths: (
 // @import "~bootstrap/scss/accordion";
 @import "variables";
 @import "fonts";
+@import "sections/hero";
 @import "typography";
 @import "layout";
 @import "forms";
@@ -24,7 +25,7 @@ $container-max-widths: (
 
 @import "accordion";
 
-@import "sections/hero";
+
 @import "sections/about";
 @import "sections/resume";
 @import "sections/portfolio";
