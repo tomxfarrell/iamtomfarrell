@@ -11523,9 +11523,6 @@ section:not(.hero) {
   }
 }
 @media (max-width: 500px) {
-  #hero {
-    height: 667px;
-  }
   #hero .hero-day-trees,
 #hero .hero-night-trees,
 #hero .hero-day-mountains-foreground,
