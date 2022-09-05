@@ -11074,19 +11074,6 @@ section:not(.hero) {
     padding: 100px 0;
   }
 }
-@media (max-width: 500px) {
-  body {
-    min-height: 100vh;
-    min-height: -moz-available;
-    min-height: fill-available;
-    min-height: -webkit-fill-available;
-  }
-  html {
-    height: -moz-available;
-    height: fill-available;
-    height: -webkit-fill-available;
-  }
-}
 @media (min-width: 1920px) {
   body {
     font-size: 25px;
@@ -11879,9 +11866,6 @@ footer .footer-row .top-col {
   }
 }
 @media (max-width: 500px) {
-  #hero {
-    height: 105vh;
-  }
   #hero .hero-day-trees,
 #hero .hero-night-trees,
 #hero .hero-day-mountains-foreground,

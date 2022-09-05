@@ -19821,7 +19821,23 @@ __webpack_require__(/*! ./navigation */ "./source/_assets/js/navigation.js");
 
 __webpack_require__(/*! ./animations */ "./source/_assets/js/animations.js");
 
-__webpack_require__(/*! ./portfolio */ "./source/_assets/js/portfolio.js");
+__webpack_require__(/*! ./portfolio */ "./source/_assets/js/portfolio.js"); // define a function that sets min-height of my-element to window.innerHeight:
+
+
+var setHeight = function setHeight() {
+  document.getElementById("hero").style.minHeight = window.innerHeight + "px";
+  console.log("set height");
+}; // define mobile screen size:
+
+
+var deviceWidth = window.matchMedia("(max-width: 500px)");
+
+if (deviceWidth.matches) {
+  // set an event listener that detects when innerHeight changes:
+  window.addEventListener("resize", setHeight); // call the function once to set initial height:
+
+  setHeight();
+}
 
 /***/ }),
 
