@@ -581,3 +581,17 @@ const animations = (function () {
 animations.bodyLoad();
 animations.logo();
 animations.hero();
+
+//we will auto-triggering js function
+//to refresh once after first load
+(function () {
+  if (window.localStorage) {
+    //check if reloaded once already
+    if (!localStorage.getItem("firstLoad")) {
+      //if not reloaded once, then set firstload to true
+      localStorage["firstLoad"] = true;
+      //reload the webpage using reload() method
+      window.location.reload();
+    } else localStorage.removeItem("firstLoad");
+  }
+})();
