@@ -2,19 +2,11 @@ import "bootstrap";
 
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
 import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 
 const animations = (function () {
-  // function scrollSmoother() {
-  //   const smoother = ScrollSmoother.create({
-  //     content: "#smooth-content",
-  //     smooth: 1,
-  //   });
-  // }
-
   function bodyLoad() {
     let theBody = document.querySelector("body");
     let thebodytl = gsap.timeline();
@@ -111,7 +103,7 @@ const animations = (function () {
       aboutSectionContainer = document.querySelector(".about-container");
 
     let mm = gsap.matchMedia();
-
+    gsap.matchMediaRefresh();
     // add a media query. When it matches, the associated function will run
     mm.add("(min-width: 1031px)", () => {
       gsap.set(moon, {
