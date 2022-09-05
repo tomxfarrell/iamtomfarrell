@@ -117,6 +117,7 @@ const animations = (function () {
       aboutSection = document.querySelector("#about"),
       aboutSectionContainer = document.querySelector(".about-container");
 
+    ScrollTrigger.refresh();
     let mm = gsap.matchMedia();
 
     // add a media query. When it matches, the associated function will run
@@ -421,8 +422,6 @@ const animations = (function () {
     });
 
     mm.add("(max-width: 500px)", () => {
-      ScrollTrigger.refresh();
-
       gsap.set(moon, {
         opacity: 0,
       });
