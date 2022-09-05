@@ -6,10 +6,6 @@ import { DrawSVGPlugin } from "gsap/DrawSVGPlugin";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(DrawSVGPlugin);
 
-window.addEventListener("load", function (event) {
-  ScrollTrigger.refresh();
-});
-
 const animations = (function () {
   function bodyLoad() {
     let theBody = document.querySelector("body");
@@ -123,7 +119,7 @@ const animations = (function () {
           pin: true,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -263,7 +259,7 @@ const animations = (function () {
           pin: true,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -397,13 +393,13 @@ const animations = (function () {
 
       let tl = gsap.timeline({
         scrollTrigger: {
-          trigger: hero,
-          start: "top top",
+          trigger: "h1",
+          start: "top 87px",
           end: "+=100%",
-          pin: true,
+          pin: hero,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },

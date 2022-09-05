@@ -19349,9 +19349,6 @@ __webpack_require__.r(__webpack_exports__);
 
 gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger);
 gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.registerPlugin(gsap_DrawSVGPlugin__WEBPACK_IMPORTED_MODULE_3__.DrawSVGPlugin);
-window.addEventListener("load", function (event) {
-  gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh();
-});
 
 var animations = function () {
   function bodyLoad() {
@@ -19445,7 +19442,7 @@ var animations = function () {
           pin: true,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none"
         }
@@ -19535,7 +19532,7 @@ var animations = function () {
           pin: true,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none"
         }
@@ -19619,13 +19616,13 @@ var animations = function () {
       });
       var tl = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.timeline({
         scrollTrigger: {
-          trigger: hero,
-          start: "top top",
+          trigger: "h1",
+          start: "top 87px",
           end: "+=100%",
-          pin: true,
+          pin: hero,
           scrub: 2,
           markers: false,
-          invalidateOnRefresh: true,
+          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none"
         }
