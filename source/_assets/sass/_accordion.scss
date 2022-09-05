@@ -86,7 +86,7 @@
     }
   }
 
-  @media (max-width: $break-wide) {
+  @media (min-width: $break-wide) {
     .accordion-item {
       .accordion-button, h3 {
         font-size: 26px;

@@ -510,7 +510,8 @@
     }
     .hero-day-mountains-background,
     .hero-night-mountains-background {
-      bottom: 32vh;
+      // bottom: 32vh;
+      bottom: 25vh;
     }
     .hero-moon {
       top: -10vh;
@@ -526,7 +527,8 @@
   @media (max-width: 415px) {
     
     .hgroup {
-      margin-top: 3vh;
+      // margin-top: 3vh;
+      margin-top: -2vh;
       h1 {
         font-size: 42px;
         line-height: normal;

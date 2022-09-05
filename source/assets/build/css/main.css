@@ -11456,7 +11456,7 @@ footer .footer-row .top-col {
 .accordion .accordion-body ul, .accordion .accordion-body p {
   color: #fff;
 }
-@media (max-width: 1920px) {
+@media (min-width: 1920px) {
   .accordion .accordion-item .accordion-button, .accordion .accordion-item h3, .accordion .accordion-item .h3 {
     font-size: 26px;
     line-height: 38px;
@@ -11905,7 +11905,7 @@ footer .footer-row .top-col {
   }
   #hero .hero-day-mountains-background,
 #hero .hero-night-mountains-background {
-    bottom: 32vh;
+    bottom: 25vh;
   }
   #hero .hero-moon {
     top: -10vh;
@@ -11917,7 +11917,7 @@ footer .footer-row .top-col {
 }
 @media (max-width: 415px) {
   #hero .hgroup {
-    margin-top: 3vh;
+    margin-top: -2vh;
   }
   #hero .hgroup h1, #hero .hgroup .h1 {
     font-size: 42px;
