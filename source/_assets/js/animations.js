@@ -533,6 +533,9 @@ const animations = (function () {
     hero: hero,
   };
 })();
-animations.bodyLoad();
-animations.logo();
-animations.hero();
+
+setTimeout(function () {
+  animations.hero();
+  animations.bodyLoad();
+  animations.logo();
+}, "2000");
