@@ -18,13 +18,14 @@ $container-max-widths: (
 @import "layout";
 @import "forms";
 
+@import "sections/hero";
 @import "partials/header";
 @import "partials/footer";
 @import "partials/modals";
 
 @import "accordion";
 
-@import "sections/hero";
+
 @import "sections/about";
 @import "sections/resume";
 @import "sections/portfolio";

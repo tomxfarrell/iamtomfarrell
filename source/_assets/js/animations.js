@@ -121,8 +121,6 @@ const animations = (function () {
 
     // add a media query. When it matches, the associated function will run
     mm.add("(min-width: 1031px)", () => {
-      ScrollTrigger.refresh(true);
-
       gsap.set(moon, {
         opacity: 0,
       });
@@ -273,8 +271,6 @@ const animations = (function () {
     });
 
     mm.add("(max-width: 1030px)", () => {
-      ScrollTrigger.refresh(true);
-
       gsap.set(moon, {
         opacity: 0,
       });
@@ -425,8 +421,6 @@ const animations = (function () {
     });
 
     mm.add("(max-width: 500px)", () => {
-      ScrollTrigger.refresh(true);
-
       gsap.set(moon, {
         opacity: 0,
       });
