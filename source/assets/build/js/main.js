@@ -19443,6 +19443,7 @@ var animations = function () {
     var mm = gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.matchMedia(); // add a media query. When it matches, the associated function will run
 
     mm.add("(min-width: 1031px)", function () {
+      gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh(true);
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
       });
@@ -19519,6 +19520,7 @@ var animations = function () {
       });
     });
     mm.add("(max-width: 1030px)", function () {
+      gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh(true);
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
       });
@@ -19595,6 +19597,7 @@ var animations = function () {
       });
     });
     mm.add("(max-width: 500px)", function () {
+      gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh(true);
       gsap__WEBPACK_IMPORTED_MODULE_1__.gsap.set(moon, {
         opacity: 0
       });
@@ -19670,7 +19673,6 @@ var animations = function () {
         duration: 0.3
       });
     });
-    gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_2__.ScrollTrigger.refresh();
   }
 
   return {
@@ -19820,9 +19822,9 @@ __webpack_require__(/*! ./firebase */ "./source/_assets/js/firebase.js");
 
 __webpack_require__(/*! ./navigation */ "./source/_assets/js/navigation.js");
 
-__webpack_require__(/*! ./animations */ "./source/_assets/js/animations.js");
-
 __webpack_require__(/*! ./portfolio */ "./source/_assets/js/portfolio.js");
+
+__webpack_require__(/*! ./animations */ "./source/_assets/js/animations.js");
 
 /***/ }),
 
