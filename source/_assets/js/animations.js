@@ -394,12 +394,12 @@ const animations = (function () {
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: hero,
-          start: "top top",
+          start: () => "top top",
           end: "+=100%",
           pin: true,
           scrub: 2,
           markers: false,
-          // invalidateOnRefresh: true,
+          invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
