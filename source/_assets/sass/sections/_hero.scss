@@ -185,15 +185,17 @@
     }
   }
 
-  @media (max-width: 1300px) and (min-height: 800px) {
+  @media (max-width: 1330px) and (min-height: 800px) {
     // border: 10px solid red;
     .hero-day-mountains-background,
     .hero-night-mountains-background {
-      bottom: 33vh;
+      // bottom: 33vh;
+      bottom: 27vh;
     }
     .hero-day-mountains-midground,
     .hero-night-mountains-midground {
-      bottom: 23vh;
+      // bottom: 23vh;
+      bottom: 21vh;
     }
     .hero-day-mountains-foreground,
     .hero-night-mountains-foreground {
@@ -201,7 +203,8 @@
     }
     .hero-day-trees,
     .hero-night-trees {
-      bottom: -29vh;
+      // bottom: -29vh;
+      bottom: -26vh;
     }
   }
 
