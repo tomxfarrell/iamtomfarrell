@@ -308,7 +308,7 @@
 
     .hero-day-mountains-background,
     .hero-night-mountains-background {
-      bottom: 27vh;
+      bottom: 26vh;
     }
     .hero-day-mountains-midground,
     .hero-night-mountains-midground {
@@ -316,11 +316,13 @@
     }
     .hero-day-mountains-foreground,
     .hero-night-mountains-foreground {
-      bottom: 12vh;
+      // bottom: 12vh;
+      bottom: 14vh;
     }
     .hero-day-trees,
     .hero-night-trees {
-      bottom: -20vh;
+      // bottom: -20vh;
+      bottom: -16vh;
     }
   }
 
@@ -414,6 +416,33 @@
     }
   }
 
+
+  @media (max-width: 900px) and (min-height: 800px) {
+    // border: 10px solid orange;
+
+    .hero-sun {
+      top: 34vh;
+    }
+
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 24vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 21vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 11vh;
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      // bottom: -20vh;
+      bottom: -18vh;
+    }
+  }
+
   @media (max-width: 767px) {
     .hero-day-trees,
     .hero-night-trees,
@@ -465,6 +494,31 @@
     }
   }
 
+  @media (max-width: 767px) and (min-height: 800px) {
+    // border: 10px solid purple;
+
+    .hero-sun {
+      top: 42vh;
+    }
+
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 19vh;
+    }
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 18vh;
+    }
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 8vh;
+    }
+    .hero-day-trees,
+    .hero-night-trees {
+      // bottom: -20vh;
+      bottom: -18vh;
+    }
+  }
 
   @media (max-width: 670px) {
     .hero-day-trees,
@@ -629,10 +683,11 @@
   }
 
 
+  
+
   @media (max-width: 415px) {
   
     .hgroup {
-      // margin-top: 3vh;
       margin-top: -2vh;
       h1 {
         font-size: 42px;
@@ -650,8 +705,38 @@
     
     .hero-sun {
       top: 33vh;
-      // transform: scale(.5);
     }
   
   }
+
+
+  @media (max-width: 415px) and (min-height: 900px) {
+    .hero-sun {
+      top: 45vh;
+    }
+  
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 19vh;
+    }
+  
+    .hero-day-mountains-midground,
+      .hero-night-mountains-midground {
+        bottom: 16vh;
+      }
+  
+    .hero-day-mountains-foreground,
+      .hero-night-mountains-foreground {
+        bottom: 8vh;
+        left: -5px;
+      }
+  
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -7vh;
+    }
+  }
+
+
 }
+
