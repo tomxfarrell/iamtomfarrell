@@ -478,8 +478,18 @@ const animations = (function () {
       tl.set(heroDayTrees, {
         opacity: 0,
       });
-      tl.to(stars, {
-        opacity: 1,
+      tl.to(
+        stars,
+        {
+          opacity: 1,
+          duration: 1,
+        },
+        "<"
+      );
+
+      tl.to(hgroup, {
+        yPercent: 55,
+        opacity: 0,
         duration: 1,
       });
       tl.to(moon, {
@@ -487,15 +497,6 @@ const animations = (function () {
         opacity: 0.7,
         duration: 2,
       });
-      tl.to(
-        hgroup,
-        {
-          yPercent: 30,
-          opacity: 0,
-          duration: 4,
-        },
-        "<"
-      );
       tl.to(
         heroNightMountainsForeground,
         {
@@ -538,4 +539,4 @@ setTimeout(function () {
   animations.hero();
   animations.bodyLoad();
   animations.logo();
-}, "2000");
+}, "1000");

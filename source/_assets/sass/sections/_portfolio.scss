@@ -92,4 +92,10 @@
     }
 
   }
+  @media (max-width: 767px) {
+    .see-portfolio {
+      text-align: left;
+      padding-top: 0;
+    }
+  }
 }

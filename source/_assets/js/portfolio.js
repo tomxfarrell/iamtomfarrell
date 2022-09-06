@@ -15,11 +15,11 @@ const portfolio = (function () {
     if (portfolioSection.contains(unlocked)) {
       setTimeout(function () {
         gsap.to(window, {
-          scrollTo: unlocked,
+          scrollTo: portfolioSection,
           duration: 0.65,
           ease: "power3.out",
         });
-      }, "50");
+      }, "1000");
     }
   }
 

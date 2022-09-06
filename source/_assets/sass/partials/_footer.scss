@@ -24,11 +24,23 @@ footer {
       width: 25px;
       height: 25px;
       fill: $green;
+      transform: translateY(0);
+      transition: all .3s ease;
     }
-    &:focus, &:focus-visible {
+    &:focus, &:focus-within {
+      outline: none;
+      box-shadow: none;
+    }
+    &:focus-visible {
       outline: 2px solid $green;
       box-shadow: 0 0 0 0.25rem rgb(88 226 139 / 25%);
       border-color: $green;
+    }
+    &:hover {
+      #chevron-up {
+        transform: translateY(-2px);
+        fill: $blue-gray;
+      }
     }
   }
 
