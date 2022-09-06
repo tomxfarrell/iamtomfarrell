@@ -19,6 +19,9 @@
       margin-bottom: 1em;
     }
   }
+  @media (max-width: 1300px) and (min-height: 800px) {
+    margin-top: -24vh;
+  }
 
   @media (max-width: 991px) {
     margin-top: -175px;
