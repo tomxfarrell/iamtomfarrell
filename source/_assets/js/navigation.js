@@ -120,12 +120,31 @@ const navigation = (function () {
     closeMenuOnResize();
   }
 
+  function siteScrollTo() {
+    let scrollToLinks = document.querySelectorAll(".scroll-to"),
+      scrollToID;
+
+    scrollToLinks.forEach(function (scrollToLink) {
+      scrollToLink.addEventListener("click", function (e) {
+        e.preventDefault();
+        scrollToID = this.hash;
+        gsap.to(window, {
+          scrollTo: scrollToID,
+          duration: 0.65,
+          ease: "power3.out",
+        });
+      });
+    });
+  }
+
   return {
     navScrollTo: navScrollTo,
+    siteScrollTo: siteScrollTo,
     pinNav: pinNav,
     toTop: toTop,
   };
 })();
 navigation.navScrollTo();
+navigation.siteScrollTo();
 navigation.pinNav();
 navigation.toTop();

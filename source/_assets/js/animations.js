@@ -392,7 +392,7 @@ const animations = (function () {
       let tl = gsap.timeline({
         scrollTrigger: {
           trigger: hero,
-          start: () => "top top",
+          start: "top top",
           end: "+=100%",
           pin: true,
           scrub: 2,
