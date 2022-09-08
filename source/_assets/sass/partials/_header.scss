@@ -4,7 +4,7 @@ body.freeze {
 
 header {
   position: absolute;
-  z-index: 13; /* higher than night mask */
+  z-index: 20; /* higher than night mask */
   width: 100%;
 
   .navbar-brand {

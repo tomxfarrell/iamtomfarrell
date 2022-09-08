@@ -106,7 +106,7 @@ const animations = (function () {
 
     // add a media query. When it matches, the associated function will run
 
-    mm.add("(min-width: 1031px)", () => {
+    mm.add("(min-width: 901px)", () => {
       gsap.set(moon, {
         opacity: 0,
       });
@@ -119,7 +119,6 @@ const animations = (function () {
           pin: true,
           scrub: 2,
           markers: false,
-          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -246,7 +245,7 @@ const animations = (function () {
       });
     });
 
-    mm.add("(min-width: 501px) and (max-width: 1030px)", () => {
+    mm.add("(min-width: 501px) and (max-width:900px)", () => {
       gsap.set(moon, {
         opacity: 0,
       });
@@ -259,7 +258,6 @@ const animations = (function () {
           pin: true,
           scrub: 2,
           markers: false,
-          // invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -352,7 +350,7 @@ const animations = (function () {
         {
           yPercent: 30,
           opacity: 0,
-          duration: 4,
+          duration: 3,
         },
         "<"
       );
@@ -399,7 +397,6 @@ const animations = (function () {
           pin: true,
           scrub: 1,
           markers: false,
-          invalidateOnRefresh: true,
           id: "hero",
           toggleActions: "play none reverse none",
         },
@@ -488,13 +485,13 @@ const animations = (function () {
       );
 
       tl.to(hgroup, {
-        yPercent: 55,
+        yPercent: 65,
         opacity: 0,
         duration: 1,
       });
       tl.to(moon, {
-        yPercent: 73,
-        opacity: 0.7,
+        yPercent: 110,
+        opacity: 1,
         duration: 2,
       });
       tl.to(
@@ -516,10 +513,10 @@ const animations = (function () {
       tl.to(
         aboutSection,
         {
-          yPercent: -4,
-          duration: 1,
+          yPercent: -10,
+          duration: 0.3,
         },
-        "-=4"
+        "-=10"
       );
       tl.to(aboutSectionContainer, {
         opacity: 1,
