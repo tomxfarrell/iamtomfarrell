@@ -395,7 +395,7 @@ const animations = (function () {
           start: () => "top top",
           end: "+=100%",
           pin: true,
-          scrub: 1,
+          scrub: 2,
           markers: false,
           id: "hero",
           toggleActions: "play none reverse none",
