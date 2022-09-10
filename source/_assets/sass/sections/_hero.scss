@@ -161,10 +161,31 @@
     }
     
   }
+  
 
   @media (min-width: 1440px) and (max-height: 776px) {
     .hgroup {
       bottom: 3vw;
+      h1 {
+        font-size: 62px;
+        line-height: 65px;
+        strong {
+          font-size: 110px;
+          line-height: 113px;
+        }
+      }
+      h2 {
+        font-size: 27px;
+        line-height: 30px;
+      }
+    }
+    
+  }
+
+
+  @media (min-width: 1300px) and (max-height: 776px) {
+    .hgroup {
+      bottom: 1vw;
       h1 {
         font-size: 62px;
         line-height: 65px;
