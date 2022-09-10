@@ -405,7 +405,7 @@ const animations = (function () {
         sun,
         {
           yPercent: 55,
-          duration: 1,
+          duration: 2,
         },
         "<"
       );
@@ -492,7 +492,7 @@ const animations = (function () {
       tl.to(moon, {
         yPercent: 110,
         opacity: 1,
-        duration: 2,
+        duration: 3,
       });
       tl.to(
         heroNightMountainsForeground,
@@ -505,7 +505,7 @@ const animations = (function () {
       tl.to(
         heroNightTrees,
         {
-          yPercent: -25,
+          yPercent: -20,
           duration: 4,
         },
         "<"
