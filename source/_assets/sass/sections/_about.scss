@@ -4,7 +4,8 @@
   background-image:url(/assets/images/bg-about.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -20vw;
+  // margin-top: -20vw;
+  margin-top: -100px;
   .about-container {
     opacity: 0;
   }
@@ -19,9 +20,9 @@
     }
   }
 
-  @media (max-width: 1130px) {
-    margin-top: -17vw;
-  }
+  // @media (max-width: 1130px) {
+  //   margin-top: -17vw;
+  // }
 
   @media (max-width: 900px) {
     margin-top: -15vw;

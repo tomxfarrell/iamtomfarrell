@@ -232,11 +232,6 @@ const animations = (function () {
         opacity: 0,
         duration: 4,
       });
-      tl.to(moon, {
-        yPercent: 74,
-        opacity: 0.7,
-        duration: 3,
-      });
 
       tl.to(
         heroNightMountainsForeground,
@@ -254,13 +249,18 @@ const animations = (function () {
         },
         "<"
       );
+      tl.to(moon, {
+        yPercent: 74,
+        opacity: 0.7,
+        duration: 3,
+      });
       tl.to(
         aboutSection,
         {
           yPercent: -7,
           duration: 1,
         },
-        "-=4"
+        ">-12"
       );
       tl.to(aboutSectionContainer, {
         opacity: 1,
@@ -288,7 +288,7 @@ const animations = (function () {
       tl.to(
         sun,
         {
-          yPercent: 55,
+          yPercent: 65,
           duration: 1,
         },
         "<"
