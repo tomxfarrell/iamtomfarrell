@@ -202,6 +202,16 @@
     
   }
 
+  @media (max-width: 1150px) {
+   
+    .container {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 5;
+    }
+  }
   
   /* mobile start for hero below */
   @media (max-width: 900px) {

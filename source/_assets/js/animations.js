@@ -106,8 +106,6 @@ const animations = (function () {
 
     let mm = gsap.matchMedia();
 
-    // add a media query. When it matches, the associated function will run
-
     mm.add("(min-width: 901px)", () => {
       gsap.set(moon, {
         opacity: 0,
@@ -229,20 +227,17 @@ const animations = (function () {
         },
         "<"
       );
+      tl.to(hgroup, {
+        yPercent: 100,
+        opacity: 0,
+        duration: 4,
+      });
       tl.to(moon, {
         yPercent: 74,
         opacity: 0.7,
         duration: 3,
       });
-      tl.to(
-        hgroup,
-        {
-          yPercent: 30,
-          opacity: 0,
-          duration: 4,
-        },
-        "<"
-      );
+
       tl.to(
         heroNightMountainsForeground,
         {
@@ -402,7 +397,7 @@ const animations = (function () {
       tl.to(
         hgroup,
         {
-          yPercent: 30,
+          // yPercent: 100,
           opacity: 0,
           duration: 3,
         },
@@ -549,9 +544,9 @@ const animations = (function () {
       );
 
       tl.to(hgroup, {
-        yPercent: 65,
+        // yPercent: 65,
         opacity: 0,
-        duration: 1,
+        duration: 2,
       });
       tl.to(shootingStar1, {
         opacity: 1,
