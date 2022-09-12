@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1169" height="245" viewBox="0 0 1169 245" class="hero-stars">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_31" data-name="Rectangle 31" width="270.065" height="3" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_31-2" data-name="Rectangle 31" width="137.153" height="1.524" fill="none" stroke="#fff" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_28" data-name="Group 28" transform="translate(-126 -42)">
+    <circle id="Ellipse_42" data-name="Ellipse 42" cx="2.5" cy="2.5" r="2.5" transform="translate(263 184)" fill="#fff"/>
+    <circle id="Ellipse_43" data-name="Ellipse 43" cx="2.5" cy="2.5" r="2.5" transform="translate(365 282)" fill="#fff"/>
+    <circle id="Ellipse_44" data-name="Ellipse 44" cx="2.5" cy="2.5" r="2.5" transform="translate(435 148)" fill="#fff"/>
+    <circle id="Ellipse_45" data-name="Ellipse 45" cx="2.5" cy="2.5" r="2.5" transform="translate(933 224)" fill="#fff"/>
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="1.5" cy="1.5" r="1.5" transform="translate(1056 176)" fill="#fff"/>
+    <circle id="Ellipse_47" data-name="Ellipse 47" cx="1.5" cy="1.5" r="1.5" transform="translate(1116 42)" fill="#fff"/>
+    <circle id="Ellipse_48" data-name="Ellipse 48" cx="2.5" cy="2.5" r="2.5" transform="translate(1290 215)" fill="#fff"/>
+    <circle id="Ellipse_49" data-name="Ellipse 49" cx="4.5" cy="4.5" r="4.5" transform="translate(126 224)" fill="#fff"/>
+    <circle id="Ellipse_50" data-name="Ellipse 50" cx="4.5" cy="4.5" r="4.5" transform="translate(1078 265)" fill="#fff"/>
+    <g id="Group_20" data-name="Group 20" transform="translate(986.876 615.663)">
+      <g id="shooting-star1" data-name="Group 19" transform="translate(-649.202 -414.337) rotate(13)" clip-path="url(#clip-path)">
+        <path id="Path_19" data-name="Path 19" d="M270.065,1.715c0,.71-3.622,1.285-8.09,1.285S0,2.425,0,1.715,257.5.43,261.974.43s8.09.575,8.09,1.285" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_21" data-name="Group 21" transform="translate(1100.874 639.093)">
+      <g id="shooting-star2" data-name="Group 19" transform="translate(-833.531 -501.768) rotate(13)" clip-path="url(#clip-path-2)">
+        <path id="Path_19-2" data-name="Path 19" d="M137.153.653c0,.361-1.839.653-4.109.653S0,1.013,0,.653,130.773,0,133.044,0s4.109.292,4.109.653" transform="translate(0 0.218)" fill="#fff" stroke="#fff" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

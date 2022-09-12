@@ -25,6 +25,8 @@
       <img src="/assets/images/hero-moon.png" alt="Moon" class="hero-moon">
       <img src="/assets/images/hero-night-mask.png" alt="Night sky" class="hero-night-mask">
       
-      <img src="/assets/images/hero-stars.svg" alt="Stars" class="hero-stars">
+      <!-- <img src="/assets/images/hero-stars.svg" alt="Stars" class="hero-stars"> -->
+
+      @include('_svgs.hero-stars')
         </div>
     </section>

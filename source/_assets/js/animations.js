@@ -100,7 +100,9 @@ const animations = (function () {
       ),
       hgroup = document.querySelector(".hgroup"),
       aboutSection = document.querySelector("#about"),
-      aboutSectionContainer = document.querySelector(".about-container");
+      aboutSectionContainer = document.querySelector(".about-container"),
+      shootingStar1 = document.querySelector("#shooting-star1"),
+      shootingStar2 = document.querySelector("#shooting-star2");
 
     let mm = gsap.matchMedia();
 
@@ -117,7 +119,7 @@ const animations = (function () {
           start: "top top",
           end: "+=100%",
           pin: true,
-          scrub: 2,
+          scrub: 3,
           markers: false,
           id: "hero",
           toggleActions: "play none reverse none",
@@ -197,14 +199,40 @@ const animations = (function () {
       tl.set(heroDayTrees, {
         opacity: 0,
       });
+      tl.set(shootingStar1, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -50,
+      });
+      tl.set(shootingStar2, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -2,
+      });
       tl.to(stars, {
         opacity: 1,
-        duration: 1,
+        duration: 2,
       });
+      tl.to(shootingStar1, {
+        opacity: 1,
+        xPercent: 0,
+        scaleX: 1,
+        duration: 3,
+      });
+      tl.to(
+        shootingStar2,
+        {
+          opacity: 1,
+          xPercent: 0,
+          scaleX: 1,
+          duration: 3,
+        },
+        "<"
+      );
       tl.to(moon, {
         yPercent: 74,
         opacity: 0.7,
-        duration: 2,
+        duration: 3,
       });
       tl.to(
         hgroup,
@@ -256,7 +284,7 @@ const animations = (function () {
           start: "top top",
           end: "+=100%",
           pin: true,
-          scrub: 2,
+          scrub: 3,
           markers: false,
           id: "hero",
           toggleActions: "play none reverse none",
@@ -336,10 +364,36 @@ const animations = (function () {
       tl.set(heroDayTrees, {
         opacity: 0,
       });
+      tl.set(shootingStar1, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -50,
+      });
+      tl.set(shootingStar2, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -2,
+      });
       tl.to(stars, {
         opacity: 1,
-        duration: 1,
+        duration: 2,
       });
+      tl.to(shootingStar1, {
+        opacity: 1,
+        xPercent: 0,
+        scaleX: 1,
+        duration: 3,
+      });
+      tl.to(
+        shootingStar2,
+        {
+          opacity: 1,
+          xPercent: 0,
+          scaleX: 1,
+          duration: 3,
+        },
+        "<"
+      );
       tl.to(moon, {
         yPercent: 73,
         opacity: 0.7,
@@ -475,6 +529,16 @@ const animations = (function () {
       tl.set(heroDayTrees, {
         opacity: 0,
       });
+      tl.set(shootingStar1, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -50,
+      });
+      tl.set(shootingStar2, {
+        opacity: 0.1,
+        scaleX: 0,
+        xPercent: -2,
+      });
       tl.to(
         stars,
         {
@@ -489,6 +553,22 @@ const animations = (function () {
         opacity: 0,
         duration: 1,
       });
+      tl.to(shootingStar1, {
+        opacity: 1,
+        xPercent: 0,
+        scaleX: 1,
+        duration: 3,
+      });
+      tl.to(
+        shootingStar2,
+        {
+          opacity: 1,
+          xPercent: 0,
+          scaleX: 1,
+          duration: 3,
+        },
+        "<"
+      );
       tl.to(moon, {
         yPercent: 110,
         opacity: 1,
