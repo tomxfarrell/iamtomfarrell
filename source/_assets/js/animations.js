@@ -397,7 +397,7 @@ const animations = (function () {
       tl.to(
         hgroup,
         {
-          // yPercent: 100,
+          yPercent: 100,
           opacity: 0,
           duration: 3,
         },

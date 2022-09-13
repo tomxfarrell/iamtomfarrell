@@ -164,7 +164,7 @@
   
 
 
-  @media (max-width: 1440px) and (max-height: 700px) {
+  @media (min-width: 1440px) and (max-height: 776px) {
     .hgroup {
       bottom: 3vw;
       h1 {
@@ -216,26 +216,6 @@
   }
 
 
-  @media (min-width: 1440px) and (max-height: 776px) {
-    .hgroup {
-      bottom: 3vw;
-      h1 {
-        font-size: 62px;
-        line-height: 65px;
-        strong {
-          font-size: 110px;
-          line-height: 113px;
-        }
-      }
-      h2 {
-        font-size: 27px;
-        line-height: 30px;
-      }
-    }
-    
-  }
-
-
   @media (min-width: 1300px) and (max-height: 776px) {
     .hgroup {
       bottom: 1vw;
@@ -255,16 +235,26 @@
     
   }
 
-  @media (max-width: 1150px) {
+  // @media (max-width: 1150px) {
    
-    .container {
-      position: absolute;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      z-index: 5;
-    }
-  }
+  //   .container {
+  //     position: absolute;
+  //     left: 0;
+  //     right: 0;
+  //     margin: 0 auto;
+  //     z-index: 5;
+  //   }
+  // }
+
+  // @media (max-width: 992px) {
+  //   .container {
+  //     position: absolute;
+  //     left: 0;
+  //     right: 0;
+  //     margin: 0 auto;
+  //     z-index: 5;
+  //   }
+  // }
   
   /* mobile start for hero below */
   @media (max-width: 900px) {
