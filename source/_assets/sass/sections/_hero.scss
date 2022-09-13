@@ -163,6 +163,59 @@
   }
   
 
+
+  @media (max-width: 1440px) and (max-height: 700px) {
+    .hgroup {
+      bottom: 3vw;
+      h1 {
+        font-size: 62px;
+        line-height: 65px;
+        strong {
+          font-size: 105px;
+          line-height: 108px;
+        }
+      }
+      h2 {
+        font-size: 27px;
+        line-height: 30px;
+      }
+    }
+
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: 1vw;
+    }
+
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 7vw;
+    }
+
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 10vw;
+    }
+
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -23vw;
+    }
+
+    .hero-sun {
+      bottom: 23vw;
+    }
+
+    .hero-moon {
+      bottom: 38vw;
+    }
+
+    .hero-stars {
+      bottom: 34vw;
+    }
+    
+  }
+
+
   @media (min-width: 1440px) and (max-height: 776px) {
     .hgroup {
       bottom: 3vw;
