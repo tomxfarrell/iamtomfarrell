@@ -20,9 +20,16 @@
     }
   }
 
-  // @media (max-width: 1130px) {
-  //   margin-top: -17vw;
-  // }
+
+
+  @media (min-width: 1920px) {
+    margin-top: -150px;
+  }
+
+
+  @media (min-width: 2500px) {
+    margin-top: -300px;
+  }
 
   @media (max-width: 900px) {
     margin-top: -15vw;

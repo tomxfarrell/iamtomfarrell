@@ -88,17 +88,18 @@
                       <ul>
                         <li>SVG animations</li>
                         <li>Custom Wordpress development</li>
+                        <li>Responsive Web Design</li>
                         <li>Laravel & Jigsaw</li>
                         <li>APIs</li>
                         <li>Cross-browser compatibility</li>
                         <li>Web accessibility</li>
                         <li>Americans with Disabilities Act (ADA) compliance</li>
                         <li>Project management</li>
-                        <li>Quality assurance</li>
                       </ul>
                     </div>
                     <div class="col">
                       <ul>
+                        <li>Quality assurance</li>
                         <li>Email marketing</li>
                         <li>Search Engine Optimization</li>
                         <li>Application management</li>
