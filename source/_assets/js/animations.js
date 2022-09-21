@@ -227,11 +227,20 @@ const animations = (function () {
         },
         "<"
       );
-      tl.to(hgroup, {
-        yPercent: 100,
-        opacity: 0,
-        duration: 4,
+      tl.to(moon, {
+        yPercent: 74,
+        opacity: 0.7,
+        duration: 3,
       });
+      tl.to(
+        hgroup,
+        {
+          yPercent: 100,
+          opacity: 0,
+          duration: 4,
+        },
+        "<"
+      );
 
       tl.to(
         heroNightMountainsForeground,
@@ -249,11 +258,7 @@ const animations = (function () {
         },
         "<"
       );
-      tl.to(moon, {
-        yPercent: 74,
-        opacity: 0.7,
-        duration: 3,
-      });
+
       tl.to(
         aboutSection,
         {

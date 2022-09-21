@@ -4,7 +4,6 @@
   background-image:url(/assets/images/bg-about.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  // margin-top: -20vw;
   margin-top: -100px;
   .about-container {
     opacity: 0;
@@ -14,7 +13,9 @@
   }
 
   .row-about {
-    max-width: 860px;
+    max-width: 920px;
+    margin: 0 auto;
+    
     .col-photo {
       margin-bottom: 1em;
     }
@@ -25,7 +26,6 @@
   @media (min-width: 1920px) {
     margin-top: -150px;
   }
-
 
   @media (min-width: 2500px) {
     margin-top: -300px;

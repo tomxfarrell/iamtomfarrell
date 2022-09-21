@@ -70,14 +70,18 @@
     .experience-box {
       margin-bottom: 50px;
     }
+ 
     ul {
       padding: 0 0 0 17px;
+      font-size: 16px;
+      line-height: 26px;
       li {
+        margin-bottom: .75em;
         &::marker {
           color: $green;
         }
         &:not(:last-child) {
-          margin-bottom: 1em;
+          margin-bottom: .75em;
         }
       }
     }

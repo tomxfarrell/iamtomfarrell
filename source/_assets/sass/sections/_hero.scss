@@ -8,7 +8,7 @@
   overflow: hidden;
 
   .hgroup {
-    bottom: -3vw;
+    bottom: -4vw;
     z-index: 9;
     position: relative;
     h1, h2 {
@@ -16,9 +16,9 @@
     }
     h2 {
       color: $white;
-      font-size: 2.1vw;
-      line-height: 2.6vw;
-      font-weight: 700;
+      font-size: 2vw;
+      line-height: 2.5vw;
+      font-weight: 400;
       text-align: center;
       text-transform: none;
     }

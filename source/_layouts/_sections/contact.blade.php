@@ -18,7 +18,7 @@
 
           <dl class="dl-inline mb-0">
             <dt><strong>Email:</strong>&nbsp;</dt>
-            <dd><a href="mailto:tom@iamtomfarrell.com" class="link-main">tom@iamtomfarrell.com</a></dd>
+            <dd><a href="mailto:tom@iamtomfarrell.com" class="link-main link-dark link-underline">tom@iamtomfarrell.com</a></dd>
           </dl>
 
           <p class="small mt-0">Randolph, NJ</p>
