@@ -557,7 +557,7 @@ const animations = (function () {
         opacity: 1,
         xPercent: 0,
         scaleX: 1,
-        duration: 3,
+        duration: 2,
       });
       tl.to(
         shootingStar2,
@@ -565,14 +565,14 @@ const animations = (function () {
           opacity: 1,
           xPercent: 0,
           scaleX: 1,
-          duration: 3,
+          duration: 2,
         },
         "<"
       );
       tl.to(moon, {
-        yPercent: 110,
+        yPercent: 120,
         opacity: 1,
-        duration: 3,
+        duration: 2,
       });
       tl.to(
         heroNightMountainsForeground,
@@ -596,7 +596,7 @@ const animations = (function () {
           yPercent: -10,
           duration: 0.3,
         },
-        "-=10"
+        "-=15"
       );
       tl.to(aboutSectionContainer, {
         opacity: 1,

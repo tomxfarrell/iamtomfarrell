@@ -13,7 +13,7 @@
                   Professional Experience
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionResume">
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                 <div class="accordion-body">
                   <div class="experience-box">
                     <h3 class="job-title">Senior Developer / 2016 - 2022</h3>
@@ -33,7 +33,7 @@
 
                   <div class="experience-box">
                     <h3 class="job-title">Lead Front-End Developer / 2012 - 2016</h3>
-                    <h3 class="job-location">Sentient - Morristown, NJ</h3>
+                    <h3 class="job-location">Sentient Interactive - Morristown, NJ</h3>
                     <ul>
                       <li>Developed responsive websites, landing pages and interactive visual aids (IVA)</li>
                       <li>Developed various proof of concept demos to help win sales pitches and gain new accounts</li>
@@ -63,7 +63,7 @@
                   Achievements & Accomplishments
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionResume">
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                 <div class="accordion-body">
                   <ul>
                     <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for <strong>top pharmaceutical and Fortune 500 companies</strong></li>
@@ -81,7 +81,7 @@
                   Proficiencies/Specialties
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionResume">
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col">
@@ -122,7 +122,7 @@
                   Certifications
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionResume">
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
                 <div class="accordion-body">
                   <div class="experience-box">
                     <h3 class="job-title mb-3">Veeva Systems / 2022</h3>

@@ -5,28 +5,14 @@
           <h2 class="with-line mb-5">Lets Chat</h2>
           <dl class="mb-5">
             <dt>Thomas Farrell</dt>
-            <dd>
-              Senior Front-End Developer
-            </dd>
-            <dd>
-              SVG Animator
-            </dd>
-            <dd>
-              Creative Problem Solver
-            </dd>
-          </dl>
-
-          <dl class="dl-inline mb-0">
-            <dt><strong>Email:</strong>&nbsp;</dt>
+            <dd>Randolph, NJ</dd>
             <dd><a href="mailto:tom@iamtomfarrell.com" class="link-main link-dark link-underline">tom@iamtomfarrell.com</a></dd>
           </dl>
 
-          <p class="small mt-0">Randolph, NJ</p>
-
           <div class="social">
-            <a href="https://www.linkedin.com/in/thomasjfarrell/">
-              <img src="/assets/images/icon-linkedin.svg" alt="LinkedIn">
-            </a>
+
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="thomasjfarrell" data-version="v1"></div>
+              
           </div>
         </div>
         <div class="col-md-7 col-lg-8">

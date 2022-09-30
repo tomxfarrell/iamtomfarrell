@@ -3,9 +3,9 @@
         <div class="hgroup">
           <h1>
             Hi, I'm
-            <strong>Thomas Farrell</strong>
+            <strong>Tom Farrell</strong>
           </h1>
-          <h2>Front-End Developer, SVG Animator & Outdoors Enthusiast</h2>
+          <h2>Front-End Developer,<span class="fbk"></span> SVG Animator &<span class="fbk"></span> Outdoors Enthusiast</h2>
         </div>
       </div>
         <div class="svg-container">

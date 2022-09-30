@@ -5,7 +5,7 @@
           <h2 class="with-line mb-5">Skills &<br> Experience</h2>
         </div>
         <div class="col-md-6 col-lg-8">
-          <p>Throughout my career I have developed hundreds of responsive websites, interactive animations and Content Management Systems (CMS) for Fortune 500 companies and some of the biggest names in the pharmaceutical industry.</p>
+          <p>I have developed hundreds of responsive websites, interactive animations and Content Management Systems (CMS) for Fortune 500 companies and some of the biggest names in the pharmaceutical industry.</p>
           
         </div>
       </div>
@@ -16,8 +16,9 @@
           <h3 class="with-line-full">Front End</h3>
           <ul>
             <li>JavaScript</li>
+            <li>Wordpress</li>
+            <li>GreenSock Animation Platform (GSAP)</li>
             <li>jQuery</li>
-            <li>GSAP</li>
             <li>HTML/CSS/SASS/LESS</li>
           </ul>
         </div>
@@ -27,7 +28,8 @@
           <ul>
             <li>PHP</li>
             <li>APIs</li>
-            <li>MySQL/Laravel/WP Database</li>
+            <li>Laravel</li>
+            <li>Wordpress/MySQL Database</li>
             <li>Firebase Database</li>
           </ul>
         </div>
@@ -39,6 +41,7 @@
             <li>XD</li>
             <li>Photoshop</li>
             <li>Illustrator</li>
+            <li>Sketch</li>
           </ul>
         </div>
       </div>

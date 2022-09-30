@@ -69,6 +69,12 @@ strong {
   font-weight: 700;
 }
 
+@media (max-width: 415px) {
+  h2:not(.hero h2) {
+    font-size: 35px;
+  }
+}
+
 @media (min-width: 1920px) {
   p, ul {
     font-size: 25px;

@@ -80,12 +80,12 @@ const navigation = (function () {
           ".nav-item",
           {
             delay: 0.5,
-            duration: 0.3,
+            duration: 0.15,
             opacity: 1,
             scale: 1,
 
             stagger: {
-              each: 0.3,
+              each: 0.15,
             },
           },
           "<"

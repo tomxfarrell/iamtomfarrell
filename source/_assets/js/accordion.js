@@ -22,4 +22,4 @@ const accordion = (function () {
     scrollWhenOpen: scrollWhenOpen,
   };
 })();
-accordion.scrollWhenOpen();
+// accordion.scrollWhenOpen();

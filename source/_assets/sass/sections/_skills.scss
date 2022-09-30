@@ -10,8 +10,8 @@
       color: $not-black;
     }
     ul {
-      list-style: none;
-      padding: 0;
+      // list-style: none;
+      padding: 0 0 0 20px;
       li:not(:last-child) {
         margin-bottom: .45em;
       }

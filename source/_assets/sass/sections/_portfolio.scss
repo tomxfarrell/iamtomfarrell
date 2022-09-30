@@ -27,12 +27,6 @@
         fill: $not-black;
       }
     }
-    // &:hover {
-    //   .locked-txt {
-    //     opacity: 1;
-
-    //   }
-    // }
   }
   h2 {
     color: $white;
@@ -102,6 +96,14 @@
     .see-portfolio {
       text-align: left;
       padding-top: 0;
+    }
+  }
+  @media (max-width: 415px) {
+    .row-concepts {
+      .cp_embed_wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
   }
 }
