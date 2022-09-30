@@ -8,7 +8,7 @@
             <h2 class="with-line mb-4">
               About Me
             </h2>
-            <p>I'm a front-end developer with over two decades of experience developing custom, responsive websites and interactive animations for Fortune 500 companies and small  businesses.</p>
+            <p>I'm a front-end developer with over two decades of experience developing custom, responsive websites and interactive animations for Fortune 500 companies and small businesses.</p>
 
             <p>I am described as analytical and detail-oriented with a creative eye and ability to build websites from concept to completion.</p>
 
