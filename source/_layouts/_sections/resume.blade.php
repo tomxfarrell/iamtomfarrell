@@ -20,12 +20,12 @@
                     <h3 class="job-location">Real Chemistry - Florham Park, NJ</h3>
                     <ul>
                       <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for top pharmaceutical and Fortune 500 companies</li>
+                      <li>Worked closely with designers and UX professionals to develop pixel-perfect and user-friendly website experiences</li>
+                      <li>Developed accessible websites in compliance with ADA (Americans with Disabilities Act)</li>
                       <li>Involved in beginning phases of new website development projects to help make any technical key decisions prior to project kickoff</li>
                       <li>Collaborated with business analysts to help complete accurate and detailed website requirements</li>
                       <li>Devised technical approaches and developer plans to facilitate initial and ongoing development efforts</li>
                       <li>Created actionable JIRA tasks with accurate completion estimations to help drive projects and meet deadlines</li>
-                      <li>Worked closely with designers and UX professionals to develop pixel-perfect and user-friendly website experiences</li>
-                      <li>Developed accessible websites in compliance with ADA (Americans with Disabilities Act)</li>
                       <li>Ensured cross-browser and device compatibility by testing, troubleshooting and resolving any issues or bugs</li>
                       <li>Developed HTML emails for Veeva CRM as well as promotional email marketing campaigns</li>
                     </ul>
