@@ -11,7 +11,7 @@
 
           <div class="social">
 
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="thomasjfarrell" data-version="v1"></div>
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="thomasjfarrell" data-version="v1"></div> 
               
           </div>
         </div>

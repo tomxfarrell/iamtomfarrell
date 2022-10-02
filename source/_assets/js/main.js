@@ -3,4 +3,3 @@ require("./firebase");
 require("./animations");
 require("./navigation");
 require("./portfolio");
-require("./accordion");

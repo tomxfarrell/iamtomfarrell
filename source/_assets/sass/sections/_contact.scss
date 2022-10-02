@@ -11,7 +11,7 @@
   }
   @media (max-width: 415px) {
     .social {
-      iframe {
+      iframe, .badge-base {
         width: 310px;
       }
     }
