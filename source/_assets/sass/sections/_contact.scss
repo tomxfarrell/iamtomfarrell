@@ -9,4 +9,11 @@
       margin-bottom: 2em;
     }
   }
+  @media (max-width: 415px) {
+    .social {
+      iframe {
+        width: 310px;
+      }
+    }
+  }
 }

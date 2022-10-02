@@ -526,4 +526,12 @@
 
   }
 
+
+  //iphone 11 pro
+  @media (max-width: 375px) and (min-height: 812px) {
+    .hero-sun {
+      bottom: 72vw;
+    }
+  }
+
 }
