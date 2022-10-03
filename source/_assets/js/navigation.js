@@ -61,7 +61,6 @@ const navigation = (function () {
             duration: 0.65,
             ease: "power3.out",
           });
-          console.log("desktop");
         }
       });
     });
