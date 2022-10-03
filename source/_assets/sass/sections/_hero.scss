@@ -530,8 +530,37 @@
 
   @media (max-width: 375px) and (min-height: 600px) {
     .hero-sun {
-      bottom: 55vw;
+      bottom: 44vw;
     }
+
+    .hero-day-trees,
+    .hero-night-trees {
+      bottom: -56vw;
+    }
+
+    .hero-day-mountains-foreground,
+    .hero-night-mountains-foreground {
+      bottom: -8vw;
+    }
+
+    .hero-day-mountains-midground,
+    .hero-night-mountains-midground {
+      bottom: 8vw;
+    }
+
+    .hero-day-mountains-background,
+    .hero-night-mountains-background {
+      bottom: 12vw;
+    }
+
+    .hero-moon {
+      bottom: 110vw;
+    }
+
+    .hero-stars {
+      bottom: 110vw;
+    }
+    
   }
 
 
