@@ -7,6 +7,10 @@
   position: relative;
   overflow: hidden;
 
+  .test1 {
+    display: none;
+  }
+
   .hgroup {
     bottom: -4vw;
     z-index: 9;
