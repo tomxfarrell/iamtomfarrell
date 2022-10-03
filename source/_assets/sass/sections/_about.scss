@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -100px;
+  p:not(:last-child) {
+    margin-bottom: 1em;
+  }
   .about-container {
     opacity: 0;
   }
