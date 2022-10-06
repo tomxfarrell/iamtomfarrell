@@ -66,6 +66,10 @@ strong {
   font-weight: 700;
 }
 
+.stronger {
+  font-weight: 900;
+}
+
 @media (max-width: 415px) {
   h2:not(.hero h2) {
     font-size: 35px;

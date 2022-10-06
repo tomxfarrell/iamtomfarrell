@@ -16,7 +16,7 @@
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
                 <div class="accordion-body">
                   <div class="experience-box">
-                    <h3 class="job-title">Senior Developer / 2016 - 2022</h3>
+                    <h3 class="job-title">Senior Front-End Developer / 2016 - 2022</h3>
                     <h3 class="job-location">Real Chemistry - Florham Park, NJ</h3>
                     <ul>
                       <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for top pharmaceutical and Fortune 500 companies</li>
@@ -66,11 +66,11 @@
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
                 <div class="accordion-body">
                   <ul>
-                    <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for <strong>top pharmaceutical and Fortune 500 companies</strong></li>
-                    <li>Developed and standardized email templates for company-wide usage</li>
-                    <li>Increased online store sales and web traffic for various companies with Search Engine Optimization</li>
+                    <li>Developed responsive websites, landing pages, interactive animations and Content Management Systems (CMS) for top pharmaceutical and Fortune 500 companies</li>
+                    <li>Developed and standardized all email templates for company-wide internal and client-side campaigns</li>
+                    <li>Increased online store sales and web traffic for various companies with Search Engine Optimization while writing SEO-friendly, accessible code</li>
                     <li>Helped develop internal company tools to increase productivity and efficiency</li>
-                    <li>Mentored junior developers, producers and account executives on agency processes and procedures</li>
+                    <li>Mentored junior developers, project managers and account executives on agency processes and procedures</li>
                   </ul>
                 </div>
               </div>
@@ -85,29 +85,44 @@
                 <div class="accordion-body">
                   <div class="row">
                     <div class="col">
+                      <h3>Animations</h3>
                       <ul>
-                        <li>SVG animations</li>
+                        <li>JavaScript/GSAP</li>
+                        <li>CSS</li>
+                      </ul>
+                      <h3>Content Management System</h3>
+                      <ul>
                         <li>Custom Wordpress development</li>
-                        <li>Responsive Web Design</li>
-                        <li>Laravel & Jigsaw</li>
-                        <li>APIs</li>
-                        <li>Cross-browser compatibility</li>
-                        <li>Web accessibility</li>
-                        <li>Americans with Disabilities Act (ADA) compliance</li>
-                        <li>Project management</li>
+                      </ul>
+                      <h3>Frameworks</h3>
+                      <ul>
+                        <li>Laravel</li>
+                        <li>Jigsaw</li>
+                      </ul>
+                      <h3>Email Development</h3>
+                      <ul>
+                        <li>HTML</li>
+                        <li>Veeva CRM Approved Emails</li>
+                      </ul>
+                      <h3>Agile Development</h3>
+                      <ul>
+                        <li>Scrum</li>
+                        <li>Jira</li>
                       </ul>
                     </div>
                     <div class="col">
+                    <h3>Other</h3>
                       <ul>
-                        <li>Quality assurance</li>
-                        <li>Email marketing</li>
-                        <li>Search Engine Optimization</li>
-                        <li>Application management</li>
-                        <li>Agile development</li>
-                        <li>JIRA</li>
+                        <li>Responsive web design</li>
+                        <li>RESTful API</li>
                         <li>Git</li>
-                        <li>Veeva CRM Approved Emails</li>
-                        <li>Veeva CLM</li>
+                        <li>Cross-browser compatibility</li>
+                        <li>Web accessibility</li>
+                        <li>ADA compliance (Americans with Disabilities Act)</li>
+                        <li>Quality assurance</li>
+                        <li>Project management</li>
+                        <li>Search engine optimization</li>
+                        <li>Veeva CLM (closed loop marketing)</li>
                       </ul>
                     </div>
                   </div>

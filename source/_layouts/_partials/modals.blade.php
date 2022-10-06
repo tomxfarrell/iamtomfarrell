@@ -127,17 +127,17 @@
 
 
 
-<div class="modal fade" id="emModal" tabindex="-1" aria-labelledby="emModalLabel" aria-hidden="true">
+<div class="modal fade" id="obModal" tabindex="-1" aria-labelledby="obModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-body">
         <div class="row row-work">
           <div class="col-md-7 col-screens">
-            <img src="/assets/images/em-screens.png" alt="">
+            <img src="/assets/images/ob-screens.png" alt="">
           </div>
           <div class="col-md-5">
-            <h3>Explore Mmore</h3>
-            <h4>Jigsaw</h4>
+            <h3>Octave Bio</h3>
+            <h4>Custom Wordpress CMS</h4>
             <div class="tags">
               <div>JavaScript</div>
               <div>SASS/CSS</div>
@@ -147,7 +147,7 @@
               <div>GSAP</div>
             </div>
             
-            <a href="http://www.exploremmore.com" target="_blank" class="btn-main">Visit Website</a>
+            <a href="https://www.octavebio.com/" target="_blank" class="btn-main">Visit Website</a>
           </div>
         </div>
       </div>

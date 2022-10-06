@@ -11,8 +11,6 @@
             <p>I'm a front-end developer with over two decades of experience developing custom, responsive websites and interactive animations for Fortune 500 companies and small businesses.</p>
 
             <p>I am described as analytical and detail-oriented with a creative eye and ability to build websites from concept to completion.</p>
-
-            <p>With my meticulous attention to detail and dedicated work ethic, I have the ability to complete projects quickly and error free.</p>
             
             <p>I help designers, agencies and businesses transform their ideas to reality.</p>
             

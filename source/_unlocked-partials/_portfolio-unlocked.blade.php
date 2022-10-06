@@ -20,8 +20,8 @@
     </a>
   </div>
   <div class="col-site col-md-6 col-lg-4">
-    <a data-bs-toggle="modal" href="#emModal" role="button">
-      <img src="/assets/images/site-em-2x.jpg" alt="Explore Mmore">
+    <a data-bs-toggle="modal" href="#obModal" role="button">
+      <img src="/assets/images/site-ob-2x.jpg" alt="Octave Bio">
     </a>
   </div>
   <div class="col-site col-md-6 col-lg-4">
@@ -30,5 +30,6 @@
     </a>
   </div>
 </div>
+
 
 @include('_layouts._partials.modals')
