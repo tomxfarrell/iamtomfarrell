@@ -79,13 +79,13 @@
             <div class="codepen-caption">&mdash;Pure CSS Animation&mdash;</div>
           </div>
           <div class="col-md-6 col-concept">
-            <p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="QeMoZr" data-user="tomfarrell" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-              <span>See the Pen <a href="https://codepen.io/tomfarrell/pen/QeMoZr">
-              Pure CSS Animated Halloween Jack-o-lantern</a> by Tom Farrell (<a href="https://codepen.io/tomfarrell">@tomfarrell</a>)
+            <p class="codepen" data-height="450" data-default-tab="result" data-slug-hash="NvEQKE" data-user="tomfarrell" style="height: 450px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+              <span>See the Pen <a href="https://codepen.io/tomfarrell/pen/NvEQKE">
+              CSS Animating Text Mask</a> by Tom Farrell (<a href="https://codepen.io/tomfarrell">@tomfarrell</a>)
               on <a href="https://codepen.io">CodePen</a>.</span>
             </p>
             <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-            <div class="codepen-caption">&mdash;Pure CSS Animation&mdash;</div>
+            <div class="codepen-caption">&mdash;Text Masking&mdash;</div>
           </div>
         </div>
       </div>
