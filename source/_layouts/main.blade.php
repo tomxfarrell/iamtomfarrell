@@ -16,7 +16,6 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="robots" content="noindex">
     <meta property="og:image" content="/assets/images/og-image.jpg" />
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
 <body>
     @yield('body')
